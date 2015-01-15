@@ -11,4 +11,8 @@ The `code-samples` folder includes simple to use executable code snippets showca
 
 To get a good overview of the content of this repository, open the master branch on your *XCode Workspace* and take a look at both sub folders. For the complete applications, select the relevant sub folder and have a look at the README available for each individual app.
 
+Don't forget to check out our full [IOS/OSX SDK Documentation](https://developer.relayr.io/documents/Apple/Reference) for additional explanations about the available methods.
+
 Happy coding!
+
+
