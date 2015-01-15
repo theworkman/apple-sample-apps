@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:complete-apps"
+      name = "complete-apps">
+   </Group>
+   <Group
+      location = "group:code-samples"
+      name = "code-samples">
+   </Group>
+</Workspace>
