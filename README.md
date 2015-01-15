@@ -1,19 +1,14 @@
-Sample Apps and Code for the Relayr SDK
-=======================================
+# The Apple Sample Apps Repository
 
-This repository contains:
+Welcome to our Apple Sample Apps repository. This repository includes executable code samples as well as full applications, which are meant to exemplify how our iOS/OSX SDK is used and how you could incorporate it in your iOS/OSX projects. 
 
-* XCode Projects with **complete sample applications** (for iOS and OSX) showcasing common uses of the Relayr SDK.
+The repository includes two sub folders: 
 
-  All complete applications are under the `complete-apps/` folder.
++ **code-samples** 
++ **complete-apps** 
 
-* XCode Projects containing **executable sample code** showcasing several features of the Relayr SDK.
+The `code-samples` folder includes simple to use executable code snippets showcasing a number of SDK features. The `complete-apps` folder includes step by step tutorials displaying how to build a complete application using the SDK.
 
-  All executable sample code is under the `code-samples/` folder.
+To get a good overview of the content of this repository, open the master branch on your *XCode Workspace* and take a look at both sub folders. For the complete applications, select the relevant sub folder and have a look at the README available for each individual app.
 
-For a good overlook of the content of this repository open the *XCode Workspace* on the master branch and take a look of all possible applications and sample code.
-
-Step-by-step
-------------
-
-The *complete apps* offer a *tutorial* mode in which every step implementing the app is indicated by a commit point. To get a look for a specific app, just open the branch with the same name as the app and follow the commits in order.
+Happy coding!
