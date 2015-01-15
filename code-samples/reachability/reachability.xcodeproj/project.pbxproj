@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6248025E1A67F83500A2C004 /* reachability.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6248024A1A67F7A400A2C004 /* reachability.xcassets */; };
+		6248025F1A67F83500A2C004 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6248024C1A67F7A400A2C004 /* LaunchScreen.xib */; };
+		624802601A67F83500A2C004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6248024E1A67F7A400A2C004 /* Main.storyboard */; };
+		624802611A67F83E00A2C004 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 624802511A67F7A400A2C004 /* main.m */; };
+		624802621A67F83E00A2C004 /* IOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 624802531A67F7A400A2C004 /* IOSAppDelegate.m */; };
+		624802631A67F83E00A2C004 /* IOSMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624802551A67F7A400A2C004 /* IOSMainController.m */; };
+		62D491D41A680129001D409B /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D491D21A680123001D409B /* Relayr.framework */; };
+		62D491D51A680129001D409B /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62D491D21A680123001D409B /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		62D492011A680BAC001D409B /* reachability.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D492001A680BAC001D409B /* reachability.xcassets */; };
+		62D492051A680BC5001D409B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D492031A680BC5001D409B /* Main.storyboard */; };
+		62D4920D1A680BF0001D409B /* OSXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D492091A680BF0001D409B /* OSXAppDelegate.m */; };
+		62D4920E1A680BF0001D409B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D4920A1A680BF0001D409B /* main.m */; };
+		62D4920F1A680BF0001D409B /* OSXController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D4920C1A680BF0001D409B /* OSXController.m */; };
+		62D492121A680C63001D409B /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D492101A680C49001D409B /* Relayr.framework */; };
+		62D492131A680C63001D409B /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62D492101A680C49001D409B /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6209BBC21A6800C2005F42B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				62D491D51A680129001D409B /* Relayr.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D492141A680C63001D409B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				62D492131A680C63001D409B /* Relayr.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		624802201A67F54900A2C004 /* Reachability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reachability.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6248024A1A67F7A400A2C004 /* reachability.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = reachability.xcassets; sourceTree = "<group>"; };
+		6248024D1A67F7A400A2C004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6248024F1A67F7A400A2C004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		624802511A67F7A400A2C004 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		624802521A67F7A400A2C004 /* IOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSAppDelegate.h; sourceTree = "<group>"; };
+		624802531A67F7A400A2C004 /* IOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSAppDelegate.m; sourceTree = "<group>"; };
+		624802541A67F7A400A2C004 /* IOSMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSMainController.h; sourceTree = "<group>"; };
+		624802551A67F7A400A2C004 /* IOSMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSMainController.m; sourceTree = "<group>"; };
+		624802571A67F7A400A2C004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62D491D21A680123001D409B /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
+		62D491DD1A680ACA001D409B /* Reachability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reachability.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D492001A680BAC001D409B /* reachability.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = reachability.xcassets; sourceTree = "<group>"; };
+		62D492041A680BC5001D409B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62D492061A680BDD001D409B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62D492081A680BF0001D409B /* OSXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXAppDelegate.h; sourceTree = "<group>"; };
+		62D492091A680BF0001D409B /* OSXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXAppDelegate.m; sourceTree = "<group>"; };
+		62D4920A1A680BF0001D409B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62D4920B1A680BF0001D409B /* OSXController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXController.h; sourceTree = "<group>"; };
+		62D4920C1A680BF0001D409B /* OSXController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXController.m; sourceTree = "<group>"; };
+		62D492101A680C49001D409B /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/osx/Relayr.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6248021D1A67F54900A2C004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D491D41A680129001D409B /* Relayr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D491DA1A680ACA001D409B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D492121A680C63001D409B /* Relayr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		624802121A67F4D900A2C004 = {
+			isa = PBXGroup;
+			children = (
+				624802471A67F7A400A2C004 /* ios */,
+				624802581A67F7A400A2C004 /* osx */,
+				624802211A67F54900A2C004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		624802211A67F54900A2C004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				624802201A67F54900A2C004 /* Reachability.app */,
+				62D491DD1A680ACA001D409B /* Reachability.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		624802471A67F7A400A2C004 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				624802481A67F7A400A2C004 /* assets */,
+				624802501A67F7A400A2C004 /* classes */,
+				624802561A67F7A400A2C004 /* configuration */,
+				62D491D21A680123001D409B /* Relayr.framework */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		624802481A67F7A400A2C004 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				624802491A67F7A400A2C004 /* images */,
+				6248024B1A67F7A400A2C004 /* storyboards */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		624802491A67F7A400A2C004 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6248024A1A67F7A400A2C004 /* reachability.xcassets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		6248024B1A67F7A400A2C004 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6248024C1A67F7A400A2C004 /* LaunchScreen.xib */,
+				6248024E1A67F7A400A2C004 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		624802501A67F7A400A2C004 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				624802511A67F7A400A2C004 /* main.m */,
+				624802521A67F7A400A2C004 /* IOSAppDelegate.h */,
+				624802531A67F7A400A2C004 /* IOSAppDelegate.m */,
+				624802541A67F7A400A2C004 /* IOSMainController.h */,
+				624802551A67F7A400A2C004 /* IOSMainController.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		624802561A67F7A400A2C004 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				624802571A67F7A400A2C004 /* Info.plist */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		624802581A67F7A400A2C004 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				624802591A67F7A400A2C004 /* assets */,
+				6248025C1A67F7A400A2C004 /* classes */,
+				6248025D1A67F7A400A2C004 /* configuration */,
+				62D492101A680C49001D409B /* Relayr.framework */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		624802591A67F7A400A2C004 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				6248025A1A67F7A400A2C004 /* images */,
+				62D492021A680BC5001D409B /* storyboards */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		6248025A1A67F7A400A2C004 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				62D492001A680BAC001D409B /* reachability.xcassets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		6248025C1A67F7A400A2C004 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				62D4920A1A680BF0001D409B /* main.m */,
+				62D492081A680BF0001D409B /* OSXAppDelegate.h */,
+				62D492091A680BF0001D409B /* OSXAppDelegate.m */,
+				62D4920B1A680BF0001D409B /* OSXController.h */,
+				62D4920C1A680BF0001D409B /* OSXController.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		6248025D1A67F7A400A2C004 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				62D492061A680BDD001D409B /* Info.plist */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		62D492021A680BC5001D409B /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				62D492031A680BC5001D409B /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6248021F1A67F54900A2C004 /* Reachability iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 624802411A67F54900A2C004 /* Build configuration list for PBXNativeTarget "Reachability iOS" */;
+			buildPhases = (
+				6248021C1A67F54900A2C004 /* Sources */,
+				6248021D1A67F54900A2C004 /* Frameworks */,
+				6248021E1A67F54900A2C004 /* Resources */,
+				6209BBC21A6800C2005F42B3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reachability iOS";
+			productName = reachability;
+			productReference = 624802201A67F54900A2C004 /* Reachability.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62D491DC1A680ACA001D409B /* Reachability OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62D491FA1A680ACB001D409B /* Build configuration list for PBXNativeTarget "Reachability OSX" */;
+			buildPhases = (
+				62D491D91A680ACA001D409B /* Sources */,
+				62D491DA1A680ACA001D409B /* Frameworks */,
+				62D491DB1A680ACA001D409B /* Resources */,
+				62D492141A680C63001D409B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reachability OSX";
+			productName = reachability;
+			productReference = 62D491DD1A680ACA001D409B /* Reachability.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		624802131A67F4D900A2C004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					6248021F1A67F54900A2C004 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					62D491DC1A680ACA001D409B = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 624802161A67F4D900A2C004 /* Build configuration list for PBXProject "reachability" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 624802121A67F4D900A2C004;
+			productRefGroup = 624802211A67F54900A2C004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6248021F1A67F54900A2C004 /* Reachability iOS */,
+				62D491DC1A680ACA001D409B /* Reachability OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6248021E1A67F54900A2C004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6248025E1A67F83500A2C004 /* reachability.xcassets in Resources */,
+				6248025F1A67F83500A2C004 /* LaunchScreen.xib in Resources */,
+				624802601A67F83500A2C004 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D491DB1A680ACA001D409B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D492011A680BAC001D409B /* reachability.xcassets in Resources */,
+				62D492051A680BC5001D409B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6248021C1A67F54900A2C004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624802611A67F83E00A2C004 /* main.m in Sources */,
+				624802621A67F83E00A2C004 /* IOSAppDelegate.m in Sources */,
+				624802631A67F83E00A2C004 /* IOSMainController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D491D91A680ACA001D409B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D4920E1A680BF0001D409B /* main.m in Sources */,
+				62D4920D1A680BF0001D409B /* OSXAppDelegate.m in Sources */,
+				62D4920F1A680BF0001D409B /* OSXController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6248024C1A67F7A400A2C004 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6248024D1A67F7A400A2C004 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6248024E1A67F7A400A2C004 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6248024F1A67F7A400A2C004 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62D492031A680BC5001D409B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62D492041A680BC5001D409B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		624802171A67F4D900A2C004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		624802181A67F4D900A2C004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		624802421A67F54900A2C004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ios/configuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		624802431A67F54900A2C004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ios/configuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62D491FB1A680ACB001D409B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/osx",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/osx/configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		62D491FC1A680ACB001D409B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/osx",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/osx/configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		624802161A67F4D900A2C004 /* Build configuration list for PBXProject "reachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624802171A67F4D900A2C004 /* Debug */,
+				624802181A67F4D900A2C004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624802411A67F54900A2C004 /* Build configuration list for PBXNativeTarget "Reachability iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624802421A67F54900A2C004 /* Debug */,
+				624802431A67F54900A2C004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62D491FA1A680ACB001D409B /* Build configuration list for PBXNativeTarget "Reachability OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62D491FB1A680ACB001D409B /* Debug */,
+				62D491FC1A680ACB001D409B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 624802131A67F4D900A2C004 /* Project object */;
+}

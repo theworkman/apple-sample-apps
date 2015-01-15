@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="IOSMainController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Relayr Cloud reachable?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UE3-EI-v2b">
+                                <rect key="frame" x="182" y="198" width="236" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dL-Jb-Fzg">
+                                <rect key="frame" x="292" y="232" width="18" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is MileyCyrus@WreckingBall.com registered in the Relayr Cloud?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjm-yc-yII">
+                                <rect key="frame" x="48" y="279" width="506" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mki-E1-Myp">
+                                <rect key="frame" x="292" y="337" width="18" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19215686269999999" green="0.2901960784" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="mki-E1-Myp" firstAttribute="top" secondItem="qjm-yc-yII" secondAttribute="bottom" constant="10" id="2D9-O6-u40"/>
+                            <constraint firstItem="UE3-EI-v2b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="3Gb-lC-Pg2"/>
+                            <constraint firstAttribute="centerX" secondItem="8dL-Jb-Fzg" secondAttribute="centerX" constant="-0.5" id="7gx-a1-omx"/>
+                            <constraint firstAttribute="centerX" secondItem="UE3-EI-v2b" secondAttribute="centerX" id="B3F-zP-TVz"/>
+                            <constraint firstItem="8dL-Jb-Fzg" firstAttribute="top" secondItem="UE3-EI-v2b" secondAttribute="bottom" constant="10" id="BWh-5O-MNf"/>
+                            <constraint firstAttribute="centerY" secondItem="UE3-EI-v2b" secondAttribute="centerY" constant="90" id="NC7-U4-PB7"/>
+                            <constraint firstAttribute="centerX" secondItem="mki-E1-Myp" secondAttribute="centerX" id="OkF-uO-HoF"/>
+                            <constraint firstItem="UE3-EI-v2b" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ViJ-99-TKs"/>
+                            <constraint firstItem="qjm-yc-yII" firstAttribute="top" secondItem="8dL-Jb-Fzg" secondAttribute="bottom" constant="20" id="ZR1-HA-kAS"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="qjm-yc-yII" secondAttribute="trailing" constant="8" id="fmQ-ec-RmN"/>
+                            <constraint firstAttribute="centerX" secondItem="qjm-yc-yII" secondAttribute="centerX" id="mTa-jF-ZyY"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="UE3-EI-v2b" secondAttribute="trailing" constant="8" id="pyq-SU-s2h"/>
+                            <constraint firstItem="qjm-yc-yII" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="rTv-rc-sUR"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zGN-ky-Vul" appends="YES" id="C7S-tE-gg4"/>
+                        </connections>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="mki-E1-Myp" id="Tbx-9A-C2m"/>
+                        <outlet property="reachabilityLabel" destination="8dL-Jb-Fzg" id="34c-DE-KaR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zGN-ky-Vul">
+                    <connections>
+                        <action selector="screenTapped:" destination="BYZ-38-t0r" id="q2A-An-u8p"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>

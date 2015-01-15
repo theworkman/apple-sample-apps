@@ -8,5 +8,11 @@
    <Group
       location = "group:code-samples"
       name = "code-samples">
+      <FileRef
+         location = "group:reachability/reachability.xcodeproj">
+      </FileRef>
    </Group>
+   <FileRef
+      location = "group:frameworks">
+   </FileRef>
 </Workspace>
