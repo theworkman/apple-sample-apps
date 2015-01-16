@@ -13,7 +13,23 @@
 		622BA4391A69CDEA00917384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622BA4371A69CDEA00917384 /* Main.storyboard */; };
 		622BA43B1A69CDEA00917384 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622BA43A1A69CDEA00917384 /* Images.xcassets */; };
 		622BA43E1A69CDEA00917384 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 622BA43C1A69CDEA00917384 /* LaunchScreen.xib */; };
+		62D152F71A69CF240014F905 /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D152F51A69CF1B0014F905 /* Relayr.framework */; };
+		62D152F81A69CF240014F905 /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62D152F51A69CF1B0014F905 /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62D152F91A69CF240014F905 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				62D152F81A69CF240014F905 /* Relayr.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		622BA42A1A69CDEA00917384 /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,7 @@
 		622BA4381A69CDEA00917384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		622BA43A1A69CDEA00917384 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		622BA43D1A69CDEA00917384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		62D152F51A69CF1B0014F905 /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D152F71A69CF240014F905 /* Relayr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				622BA42C1A69CDEA00917384 /* thermometer */,
+				62D152F51A69CF1B0014F905 /* Relayr.framework */,
 				622BA42B1A69CDEA00917384 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +108,7 @@
 				622BA4261A69CDEA00917384 /* Sources */,
 				622BA4271A69CDEA00917384 /* Frameworks */,
 				622BA4281A69CDEA00917384 /* Resources */,
+				62D152F91A69CF240014F905 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +279,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
+				);
 				INFOPLIST_FILE = thermometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Thermometer;
@@ -269,6 +293,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
+				);
 				INFOPLIST_FILE = thermometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Thermometer;
@@ -294,6 +322,7 @@
 				622BA44F1A69CDEB00917384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
