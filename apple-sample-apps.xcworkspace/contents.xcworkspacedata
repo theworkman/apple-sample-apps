@@ -4,6 +4,9 @@
    <Group
       location = "group:complete-apps"
       name = "complete-apps">
+      <FileRef
+         location = "group:thermometer/thermometer.xcodeproj">
+      </FileRef>
    </Group>
    <Group
       location = "group:code-samples"
