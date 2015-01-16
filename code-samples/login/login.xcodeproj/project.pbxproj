@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6215148D1A6916F200770CE3 /* login.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6215147F1A6916F200770CE3 /* login.xcassets */; };
+		6215148E1A6916F200770CE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621514811A6916F200770CE3 /* LaunchScreen.xib */; };
+		6215148F1A6916F200770CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621514831A6916F200770CE3 /* Main.storyboard */; };
+		621514901A6916F200770CE3 /* iOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 621514871A6916F200770CE3 /* iOSAppDelegate.m */; };
+		621514911A6916F200770CE3 /* iOSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621514891A6916F200770CE3 /* iOSController.m */; };
+		621514921A6916F200770CE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6215148A1A6916F200770CE3 /* main.m */; };
+		621514991A69209900770CE3 /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621514971A69208900770CE3 /* Relayr.framework */; };
+		6215149A1A69209900770CE3 /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 621514971A69208900770CE3 /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		625028911A693F2300906368 /* login.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625028851A693F2300906368 /* login.xcassets */; };
+		625028921A693F2300906368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625028871A693F2300906368 /* Main.storyboard */; };
+		625028931A693F2300906368 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250288A1A693F2300906368 /* main.m */; };
+		625028941A693F2300906368 /* OSXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250288C1A693F2300906368 /* OSXAppDelegate.m */; };
+		625028951A693F2300906368 /* OSXController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250288E1A693F2300906368 /* OSXController.m */; };
+		625028991A693F3300906368 /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625028971A693F2A00906368 /* Relayr.framework */; };
+		6250289A1A693F3300906368 /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 625028971A693F2A00906368 /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6215149B1A69209A00770CE3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6215149A1A69209900770CE3 /* Relayr.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6250289B1A693F3300906368 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6250289A1A693F3300906368 /* Relayr.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		621514551A69112900770CE3 /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6215147F1A6916F200770CE3 /* login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = login.xcassets; sourceTree = "<group>"; };
+		621514821A6916F200770CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		621514841A6916F200770CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		621514861A6916F200770CE3 /* iOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSAppDelegate.h; sourceTree = "<group>"; };
+		621514871A6916F200770CE3 /* iOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSAppDelegate.m; sourceTree = "<group>"; };
+		621514881A6916F200770CE3 /* iOSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSController.h; sourceTree = "<group>"; };
+		621514891A6916F200770CE3 /* iOSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSController.m; sourceTree = "<group>"; };
+		6215148A1A6916F200770CE3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6215148C1A6916F200770CE3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621514971A69208900770CE3 /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
+		6250285F1A693CB800906368 /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		625028851A693F2300906368 /* login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = login.xcassets; sourceTree = "<group>"; };
+		625028881A693F2300906368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6250288A1A693F2300906368 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6250288B1A693F2300906368 /* OSXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXAppDelegate.h; sourceTree = "<group>"; };
+		6250288C1A693F2300906368 /* OSXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXAppDelegate.m; sourceTree = "<group>"; };
+		6250288D1A693F2300906368 /* OSXController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXController.h; sourceTree = "<group>"; };
+		6250288E1A693F2300906368 /* OSXController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXController.m; sourceTree = "<group>"; };
+		625028901A693F2300906368 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625028971A693F2A00906368 /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/osx/Relayr.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		621514521A69112900770CE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621514991A69209900770CE3 /* Relayr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6250285C1A693CB800906368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625028991A693F3300906368 /* Relayr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6215144A1A690FD600770CE3 = {
+			isa = PBXGroup;
+			children = (
+				6215147C1A6916F200770CE3 /* ios */,
+				625028821A693F2300906368 /* osx */,
+				621514561A69112900770CE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		621514561A69112900770CE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				621514551A69112900770CE3 /* Login.app */,
+				6250285F1A693CB800906368 /* Login.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6215147C1A6916F200770CE3 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				6215147D1A6916F200770CE3 /* assets */,
+				621514851A6916F200770CE3 /* classes */,
+				6215148B1A6916F200770CE3 /* configuration */,
+				621514971A69208900770CE3 /* Relayr.framework */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		6215147D1A6916F200770CE3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				6215147E1A6916F200770CE3 /* images */,
+				621514801A6916F200770CE3 /* storyboards */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		6215147E1A6916F200770CE3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6215147F1A6916F200770CE3 /* login.xcassets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		621514801A6916F200770CE3 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				621514811A6916F200770CE3 /* LaunchScreen.xib */,
+				621514831A6916F200770CE3 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		621514851A6916F200770CE3 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				6215148A1A6916F200770CE3 /* main.m */,
+				621514861A6916F200770CE3 /* iOSAppDelegate.h */,
+				621514871A6916F200770CE3 /* iOSAppDelegate.m */,
+				621514881A6916F200770CE3 /* iOSController.h */,
+				621514891A6916F200770CE3 /* iOSController.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		6215148B1A6916F200770CE3 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				6215148C1A6916F200770CE3 /* Info.plist */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		625028821A693F2300906368 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				625028831A693F2300906368 /* assets */,
+				625028891A693F2300906368 /* classes */,
+				6250288F1A693F2300906368 /* configuration */,
+				625028971A693F2A00906368 /* Relayr.framework */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		625028831A693F2300906368 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				625028841A693F2300906368 /* images */,
+				625028861A693F2300906368 /* storyboards */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		625028841A693F2300906368 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				625028851A693F2300906368 /* login.xcassets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		625028861A693F2300906368 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				625028871A693F2300906368 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		625028891A693F2300906368 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				6250288A1A693F2300906368 /* main.m */,
+				6250288B1A693F2300906368 /* OSXAppDelegate.h */,
+				6250288C1A693F2300906368 /* OSXAppDelegate.m */,
+				6250288D1A693F2300906368 /* OSXController.h */,
+				6250288E1A693F2300906368 /* OSXController.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		6250288F1A693F2300906368 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				625028901A693F2300906368 /* Info.plist */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		621514541A69112900770CE3 /* Login iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621514761A69112900770CE3 /* Build configuration list for PBXNativeTarget "Login iOS" */;
+			buildPhases = (
+				621514511A69112900770CE3 /* Sources */,
+				621514521A69112900770CE3 /* Frameworks */,
+				621514531A69112900770CE3 /* Resources */,
+				6215149B1A69209A00770CE3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Login iOS";
+			productName = login;
+			productReference = 621514551A69112900770CE3 /* Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6250285E1A693CB800906368 /* Login OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 625028801A693CB800906368 /* Build configuration list for PBXNativeTarget "Login OSX" */;
+			buildPhases = (
+				6250285B1A693CB800906368 /* Sources */,
+				6250285C1A693CB800906368 /* Frameworks */,
+				6250285D1A693CB800906368 /* Resources */,
+				6250289B1A693F3300906368 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Login OSX";
+			productName = login;
+			productReference = 6250285F1A693CB800906368 /* Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6215144B1A690FD600770CE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					621514541A69112900770CE3 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					6250285E1A693CB800906368 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 6215144E1A690FD600770CE3 /* Build configuration list for PBXProject "login" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6215144A1A690FD600770CE3;
+			productRefGroup = 621514561A69112900770CE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				621514541A69112900770CE3 /* Login iOS */,
+				6250285E1A693CB800906368 /* Login OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		621514531A69112900770CE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6215148D1A6916F200770CE3 /* login.xcassets in Resources */,
+				6215148E1A6916F200770CE3 /* LaunchScreen.xib in Resources */,
+				6215148F1A6916F200770CE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6250285D1A693CB800906368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625028911A693F2300906368 /* login.xcassets in Resources */,
+				625028921A693F2300906368 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		621514511A69112900770CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621514921A6916F200770CE3 /* main.m in Sources */,
+				621514901A6916F200770CE3 /* iOSAppDelegate.m in Sources */,
+				621514911A6916F200770CE3 /* iOSController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6250285B1A693CB800906368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625028931A693F2300906368 /* main.m in Sources */,
+				625028941A693F2300906368 /* OSXAppDelegate.m in Sources */,
+				625028951A693F2300906368 /* OSXController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		621514811A6916F200770CE3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				621514821A6916F200770CE3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		621514831A6916F200770CE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				621514841A6916F200770CE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		625028871A693F2300906368 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				625028881A693F2300906368 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6215144F1A690FD600770CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		621514501A690FD600770CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		621514771A69112900770CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/configuration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Login;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		621514781A69112900770CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/configuration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Login;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6250287C1A693CB800906368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/osx",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/osx/configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Login;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6250287D1A693CB800906368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/osx",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/osx/configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Login;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6215144E1A690FD600770CE3 /* Build configuration list for PBXProject "login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6215144F1A690FD600770CE3 /* Debug */,
+				621514501A690FD600770CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621514761A69112900770CE3 /* Build configuration list for PBXNativeTarget "Login iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621514771A69112900770CE3 /* Debug */,
+				621514781A69112900770CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		625028801A693CB800906368 /* Build configuration list for PBXNativeTarget "Login OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6250287C1A693CB800906368 /* Debug */,
+				6250287D1A693CB800906368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6215144B1A690FD600770CE3 /* Project object */;
+}

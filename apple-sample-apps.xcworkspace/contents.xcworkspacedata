@@ -11,6 +11,9 @@
       <FileRef
          location = "group:reachability/reachability.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:login/login.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:frameworks">

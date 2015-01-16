@@ -10,11 +10,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Reachability" id="1Xt-HY-uBw">
+                            <menuItem title="login" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Reachability" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="login" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About reachability" id="5kV-Vb-QxS">
+                                        <menuItem title="About login" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -28,7 +28,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide reachability" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide login" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -46,7 +46,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit reachability" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit login" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -627,7 +627,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="reachability Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="login Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -669,71 +669,65 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="OSXController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="529" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="482" height="272"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5kF-HE-6kq">
-                                <rect key="frame" x="143" y="226" width="244" height="24"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Is Relayr Cloud reachable?" id="skK-Jt-VdG">
-                                    <font key="font" metaFont="system" size="20"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QjP-Tf-6zy">
-                                <rect key="frame" x="254" y="191" width="21" height="27"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="--" id="kkl-vT-YCr">
-                                    <font key="font" metaFont="system" size="22"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="csP-p2-j5a">
-                                <rect key="frame" x="254" y="73" width="21" height="27"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="--" id="Mqp-UA-SVV">
-                                    <font key="font" metaFont="system" size="22"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vel-cH-5zC">
-                                <rect key="frame" x="32" y="108" width="465" height="48"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Is Miley@WreckingBall.com registered in the Relayr Cloud?" id="Nby-Bc-bjo">
-                                    <font key="font" metaFont="system" size="20"/>
+                            <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Eib-c0-aou">
+                                <rect key="frame" x="233" y="153" width="16" height="16"/>
+                            </progressIndicator>
+                            <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ijW-pl-HqJ">
+                                <rect key="frame" x="202" y="144" width="79" height="32"/>
+                                <buttonCell key="cell" type="push" title="Log in" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OIQ-HE-KOd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="buttonPressed:" target="XfG-lQ-9wD" id="a5V-zl-Tu0"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="INd-hK-JSB">
+                                <rect key="frame" x="186" y="109" width="111" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="User with email..." id="6hN-Hs-9ho">
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Vel-cH-5zC" firstAttribute="top" secondItem="QjP-Tf-6zy" secondAttribute="bottom" constant="35" id="5E3-fr-5Bm"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5kF-HE-6kq" secondAttribute="trailing" constant="8" id="63W-Qr-a0M"/>
-                            <constraint firstAttribute="centerX" secondItem="Vel-cH-5zC" secondAttribute="centerX" id="8KL-P1-T7e"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vel-cH-5zC" secondAttribute="trailing" constant="8" id="9ai-i5-QpA"/>
-                            <constraint firstAttribute="centerX" secondItem="csP-p2-j5a" secondAttribute="centerX" id="GFm-yZ-uqg"/>
-                            <constraint firstItem="QjP-Tf-6zy" firstAttribute="top" secondItem="5kF-HE-6kq" secondAttribute="bottom" constant="8" id="Gdj-bv-cnC"/>
-                            <constraint firstAttribute="centerX" secondItem="5kF-HE-6kq" secondAttribute="centerX" id="JBR-PW-JP7"/>
-                            <constraint firstAttribute="centerX" secondItem="QjP-Tf-6zy" secondAttribute="centerX" id="QpG-be-lyz"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="csP-p2-j5a" secondAttribute="bottom" constant="8" id="VkN-IO-734"/>
-                            <constraint firstItem="5kF-HE-6kq" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="Y2K-vo-yp4"/>
-                            <constraint firstItem="5kF-HE-6kq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="8" id="ZkS-3F-lAi"/>
-                            <constraint firstItem="Vel-cH-5zC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="8" id="hmw-fI-lc9"/>
-                            <constraint firstItem="csP-p2-j5a" firstAttribute="top" secondItem="Vel-cH-5zC" secondAttribute="bottom" constant="8" id="yCm-f4-rHy"/>
+                            <constraint firstAttribute="centerY" secondItem="Eib-c0-aou" secondAttribute="centerY" constant="25" id="Bwd-lD-Oq3"/>
+                            <constraint firstItem="INd-hK-JSB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="GVT-bG-7gb"/>
+                            <constraint firstAttribute="centerX" secondItem="INd-hK-JSB" secondAttribute="centerX" id="Hc7-Bj-615"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="INd-hK-JSB" secondAttribute="bottom" constant="8" id="SWH-DC-y1b"/>
+                            <constraint firstAttribute="centerX" secondItem="Eib-c0-aou" secondAttribute="centerX" id="U8g-to-uiR"/>
+                            <constraint firstAttribute="centerY" secondItem="ijW-pl-HqJ" secondAttribute="centerY" constant="25" id="UKF-hj-TME"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="INd-hK-JSB" secondAttribute="trailing" constant="20" symbolic="YES" id="WGH-8Q-aGj"/>
+                            <constraint firstItem="INd-hK-JSB" firstAttribute="top" secondItem="ijW-pl-HqJ" secondAttribute="bottom" constant="25" id="pe7-S3-PMv"/>
+                            <constraint firstAttribute="centerX" secondItem="ijW-pl-HqJ" secondAttribute="centerX" id="yT9-GH-ZG0"/>
                         </constraints>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
                             <color key="value" red="0.19215686269999999" green="0.2901960784" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="signInText" value="Log in"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="signOutText" value="Log out"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="signInBackgroundColor">
+                            <color key="value" red="0.50588235290000005" green="0.65098039220000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="signOutBackgroundColor">
+                            <color key="value" red="0.86065735480000005" green="0.15877667340000001" blue="0.068860177300000006" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="emailLabel" destination="csP-p2-j5a" id="0um-Gr-lfh"/>
-                        <outlet property="reachabilityLabel" destination="QjP-Tf-6zy" id="3kh-qE-tiX"/>
+                        <outlet property="logButton" destination="ijW-pl-HqJ" id="3Yo-2l-BDk"/>
+                        <outlet property="logIndicator" destination="Eib-c0-aou" id="caP-69-j27"/>
+                        <outlet property="userLabel" destination="INd-hK-JSB" id="WIt-QL-Cn4"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74.5" y="668"/>
+            <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
 </document>

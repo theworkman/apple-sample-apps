@@ -601,6 +601,7 @@
 				62D491FC1A680ACB001D409B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

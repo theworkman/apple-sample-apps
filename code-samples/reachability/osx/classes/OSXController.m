@@ -13,8 +13,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.view.wantsLayer = YES;
     self.view.layer.backgroundColor = _backgroundColor.CGColor;
     
     [self checkReachability];
@@ -42,7 +40,7 @@
 {
     _emailLabel.stringValue = @"--";
     
-    [RelayrCloud isUserWithEmail:@"MileyCyrus@WreckingBall.com" registered:^(NSError* error, NSNumber* isUserRegistered) {
+    [RelayrCloud isUserWithEmail:@"Miley@WreckingBall.com" registered:^(NSError* error, NSNumber* isUserRegistered) {
         _emailLabel.stringValue = (isUserRegistered.boolValue) ? @"YES" : @"NO";
     }];
 }

@@ -43,7 +43,7 @@
 {
     _emailLabel.text = @"--";
     
-    [RelayrCloud isUserWithEmail:@"MileyCyrus@WreckingBall.com" registered:^(NSError* error, NSNumber* isUserRegistered) {
+    [RelayrCloud isUserWithEmail:@"Miley@WreckingBall.com" registered:^(NSError* error, NSNumber* isUserRegistered) {
         _emailLabel.text = (isUserRegistered.boolValue) ? @"YES" : @"NO";
     }];
 }
