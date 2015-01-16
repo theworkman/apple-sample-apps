@@ -1,6 +1,0 @@
-framework module Relayr {
-  umbrella header "Relayr.h"
-
-  export *
-  module * { export * }
-}

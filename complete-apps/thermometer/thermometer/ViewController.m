@@ -6,6 +6,8 @@
 #define RelayrRedirectURI   @"https://relayr.io"
 
 @interface ViewController ()
+@property (weak,nonatomic) IBOutlet UILabel* currentTempLabel;
+@property (weak,nonatomic) IBOutlet UILabel* currentHumidLabel;
 @end
 
 @implementation ViewController
@@ -37,9 +39,29 @@
                 // The Relayr cloud mantains a specific list of "meanings" specifying the capabilities of devices. In this case we are interested in "temperature"
                 RelayrDevice* device = [transmitter devicesWithInputMeaning:@"temperature"].anyObject;
                 if (!device) { return NSLog(@"The user hasn't onboard the temperature sensor."); }
+                
+                [device subscribeToAllInputsWithBlock:^(RelayrDevice* device, RelayrInput* input, BOOL* unsubscribe) {
+                    if ([input.meaning isEqualToString:@"temperature"])
+                    {
+                        _currentTempLabel.text = [NSString stringWithFormat:@"%@ ºC", input.value];
+                    }
+                    else if ([input.meaning isEqualToString:@"humidity"])
+                    {
+                        _currentHumidLabel.text = [NSString stringWithFormat:@"%@ %%", input.value];
+                    }
+                    
+                } error:^(NSError* error) {
+                    NSLog(@"%@", error.localizedDescription);
+                }];
             }];
         }];
     }];
+}
+
+// Make the status bar white for the blue-ish background :)
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 @end

@@ -82,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lrhYCFhIw8BY8dduTVQczwU5h0A=
+		q5Xg9VMvL5zRavkveOY9KCpFNc0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -119,6 +119,10 @@
 		<key>PrivateHeaders/WunderbarParsing.h</key>
 		<data>
 		EpQ7rI8FNlNpD9WrCMsRd0umSbc=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		R73bPqGS8nsjdVfQQd1dmmD2mpI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -234,6 +238,10 @@
 		<key>PrivateHeaders/WunderbarParsing.h</key>
 		<data>
 		EpQ7rI8FNlNpD9WrCMsRd0umSbc=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		R73bPqGS8nsjdVfQQd1dmmD2mpI=
 		</data>
 	</dict>
 	<key>rules</key>
