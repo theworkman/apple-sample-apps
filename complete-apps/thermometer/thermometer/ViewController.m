@@ -14,15 +14,30 @@
 
 - (void)viewDidLoad
 {
+    static RelayrApp* storedApp;
     [super viewDidLoad];
     
+    // Retrieve the RelayrApp that you have created on the developer dashboard.
     [RelayrApp appWithID:RelayrAppID OAuthClientSecret:RelayrAppSecret redirectURI:RelayrRedirectURI completion:^(NSError* error, RelayrApp* app) {
-        if (error) { return; }
+        if (error) { return NSLog(@"There was an error retrieving the RelayrApp."); }
+        storedApp = app;
         
+        // Sign in an user into your Relayr App.
         [app signInUser:^(NSError* error, RelayrUser* user) {
-            if (error) { return; }
+            if (error) { return NSLog(@"There was an error signing the user."); }
             
-            NSLog(@"User correctly signed!");
+            // Retrieve the transmitters and devices owned by the user.
+            [user queryCloudForIoTs:^(NSError* error) {
+                if (error) { return NSLog(@"There was an error retrieving the users IoT."); }
+                
+                // To simplify, we suppose that the user has only one transmitter (wunderbar)
+                RelayrTransmitter* transmitter = user.transmitters.anyObject;
+                if (!transmitter) { return NSLog(@"The user has no wunderbars."); }
+                
+                // The Relayr cloud mantains a specific list of "meanings" specifying the capabilities of devices. In this case we are interested in "temperature"
+                RelayrDevice* device = [transmitter devicesWithInputMeaning:@"temperature"].anyObject;
+                if (!device) { return NSLog(@"The user hasn't onboard the temperature sensor."); }
+            }];
         }];
     }];
 }
