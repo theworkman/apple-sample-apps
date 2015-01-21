@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "622BA4291A69CDEA00917384"
+               BlueprintIdentifier = "62231CD61A6FAA7F007E2688"
                BuildableName = "Thermometer.app"
-               BlueprintName = "Thermometer iOS"
+               BlueprintName = "Thermometer OSX"
                ReferencedContainer = "container:thermometer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "622BA4291A69CDEA00917384"
+            BlueprintIdentifier = "62231CD61A6FAA7F007E2688"
             BuildableName = "Thermometer.app"
-            BlueprintName = "Thermometer iOS"
+            BlueprintName = "Thermometer OSX"
             ReferencedContainer = "container:thermometer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -51,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "622BA4291A69CDEA00917384"
+            BlueprintIdentifier = "62231CD61A6FAA7F007E2688"
             BuildableName = "Thermometer.app"
-            BlueprintName = "Thermometer iOS"
+            BlueprintName = "Thermometer OSX"
             ReferencedContainer = "container:thermometer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -69,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "622BA4291A69CDEA00917384"
+            BlueprintIdentifier = "62231CD61A6FAA7F007E2688"
             BuildableName = "Thermometer.app"
-            BlueprintName = "Thermometer iOS"
+            BlueprintName = "Thermometer OSX"
             ReferencedContainer = "container:thermometer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

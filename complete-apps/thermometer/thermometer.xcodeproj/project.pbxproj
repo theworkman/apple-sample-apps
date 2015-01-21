@@ -7,17 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		622BA4301A69CDEA00917384 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BA42F1A69CDEA00917384 /* main.m */; };
-		622BA4331A69CDEA00917384 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BA4321A69CDEA00917384 /* AppDelegate.m */; };
-		622BA4361A69CDEA00917384 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BA4351A69CDEA00917384 /* ViewController.m */; };
-		622BA4391A69CDEA00917384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622BA4371A69CDEA00917384 /* Main.storyboard */; };
-		622BA43B1A69CDEA00917384 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622BA43A1A69CDEA00917384 /* Images.xcassets */; };
-		622BA43E1A69CDEA00917384 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 622BA43C1A69CDEA00917384 /* LaunchScreen.xib */; };
+		62231CD21A6FAA41007E2688 /* iOSMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62231CD11A6FAA41007E2688 /* iOSMainController.m */; };
+		62231D0D1A6FABBB007E2688 /* thermometer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62231D011A6FABBB007E2688 /* thermometer.xcassets */; };
+		62231D0E1A6FABBB007E2688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62231D031A6FABBB007E2688 /* Main.storyboard */; };
+		62231D181A6FAC90007E2688 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62231D131A6FAC90007E2688 /* main.m */; };
+		62231D191A6FAC90007E2688 /* OSXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62231D151A6FAC90007E2688 /* OSXAppDelegate.m */; };
+		62231D1A1A6FAC90007E2688 /* OSXMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62231D171A6FAC90007E2688 /* OSXMainController.m */; };
+		62231D1D1A6FACBA007E2688 /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62231D1B1A6FACB0007E2688 /* Relayr.framework */; };
+		62231D1E1A6FACBA007E2688 /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62231D1B1A6FACB0007E2688 /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		628F04781A6FA82D0004D20C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628F04641A6FA82D0004D20C /* Images.xcassets */; };
+		628F04791A6FA82D0004D20C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628F04661A6FA82D0004D20C /* LaunchScreen.xib */; };
+		628F047A1A6FA82D0004D20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628F04681A6FA82D0004D20C /* Main.storyboard */; };
+		628F047C1A6FA82D0004D20C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F046D1A6FA82D0004D20C /* main.m */; };
+		628F04811A6FA9C50004D20C /* iOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F04801A6FA9C50004D20C /* iOSAppDelegate.m */; };
 		62D152F71A69CF240014F905 /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D152F51A69CF1B0014F905 /* Relayr.framework */; };
 		62D152F81A69CF240014F905 /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62D152F51A69CF1B0014F905 /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		62231CFE1A6FAB4D007E2688 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				62231D1E1A6FACBA007E2688 /* Relayr.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62D152F91A69CF240014F905 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,20 +50,38 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		62231CD01A6FAA41007E2688 /* iOSMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSMainController.h; sourceTree = "<group>"; };
+		62231CD11A6FAA41007E2688 /* iOSMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSMainController.m; sourceTree = "<group>"; };
+		62231CD71A6FAA7F007E2688 /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62231D011A6FABBB007E2688 /* thermometer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = thermometer.xcassets; sourceTree = "<group>"; };
+		62231D041A6FABBB007E2688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62231D0C1A6FABBB007E2688 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62231D131A6FAC90007E2688 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62231D141A6FAC90007E2688 /* OSXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXAppDelegate.h; sourceTree = "<group>"; };
+		62231D151A6FAC90007E2688 /* OSXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXAppDelegate.m; sourceTree = "<group>"; };
+		62231D161A6FAC90007E2688 /* OSXMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXMainController.h; sourceTree = "<group>"; };
+		62231D171A6FAC90007E2688 /* OSXMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXMainController.m; sourceTree = "<group>"; };
+		62231D1B1A6FACB0007E2688 /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/osx/Relayr.framework; sourceTree = "<group>"; };
 		622BA42A1A69CDEA00917384 /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		622BA42E1A69CDEA00917384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		622BA42F1A69CDEA00917384 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		622BA4311A69CDEA00917384 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		622BA4321A69CDEA00917384 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		622BA4341A69CDEA00917384 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		622BA4351A69CDEA00917384 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		622BA4381A69CDEA00917384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		622BA43A1A69CDEA00917384 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		622BA43D1A69CDEA00917384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		62D152F51A69CF1B0014F905 /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
+		628F04641A6FA82D0004D20C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		628F04671A6FA82D0004D20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		628F04691A6FA82D0004D20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		628F046D1A6FA82D0004D20C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		628F04711A6FA82D0004D20C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		628F047F1A6FA9C50004D20C /* iOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSAppDelegate.h; sourceTree = "<group>"; };
+		628F04801A6FA9C50004D20C /* iOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSAppDelegate.m; sourceTree = "<group>"; };
+		62D152F51A69CF1B0014F905 /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		62231CD41A6FAA7F007E2688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62231D1D1A6FACBA007E2688 /* Relayr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		622BA4271A69CDEA00917384 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,11 +93,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62231CFF1A6FABBB007E2688 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				62231D001A6FABBB007E2688 /* images */,
+				62231D021A6FABBB007E2688 /* storyboards */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		62231D001A6FABBB007E2688 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				62231D011A6FABBB007E2688 /* thermometer.xcassets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		62231D021A6FABBB007E2688 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				62231D031A6FABBB007E2688 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		62231D051A6FABBB007E2688 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				62231D131A6FAC90007E2688 /* main.m */,
+				62231D141A6FAC90007E2688 /* OSXAppDelegate.h */,
+				62231D151A6FAC90007E2688 /* OSXAppDelegate.m */,
+				62231D161A6FAC90007E2688 /* OSXMainController.h */,
+				62231D171A6FAC90007E2688 /* OSXMainController.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		62231D0B1A6FABBB007E2688 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				62231D0C1A6FABBB007E2688 /* Info.plist */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
 		622BA4211A69CDEA00917384 = {
 			isa = PBXGroup;
 			children = (
-				622BA42C1A69CDEA00917384 /* thermometer */,
-				62D152F51A69CF1B0014F905 /* Relayr.framework */,
+				628F04611A6FA82D0004D20C /* ios */,
+				628F04721A6FA82D0004D20C /* osx */,
 				622BA42B1A69CDEA00917384 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,37 +151,100 @@
 			isa = PBXGroup;
 			children = (
 				622BA42A1A69CDEA00917384 /* Thermometer.app */,
+				62231CD71A6FAA7F007E2688 /* Thermometer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		622BA42C1A69CDEA00917384 /* thermometer */ = {
+		628F04611A6FA82D0004D20C /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				622BA4311A69CDEA00917384 /* AppDelegate.h */,
-				622BA4321A69CDEA00917384 /* AppDelegate.m */,
-				622BA4341A69CDEA00917384 /* ViewController.h */,
-				622BA4351A69CDEA00917384 /* ViewController.m */,
-				622BA4371A69CDEA00917384 /* Main.storyboard */,
-				622BA43A1A69CDEA00917384 /* Images.xcassets */,
-				622BA43C1A69CDEA00917384 /* LaunchScreen.xib */,
-				622BA42D1A69CDEA00917384 /* Supporting Files */,
+				628F04621A6FA82D0004D20C /* assets */,
+				628F046A1A6FA82D0004D20C /* classes */,
+				628F04701A6FA82D0004D20C /* configuration */,
+				62D152F51A69CF1B0014F905 /* Relayr.framework */,
 			);
-			path = thermometer;
+			path = ios;
 			sourceTree = "<group>";
 		};
-		622BA42D1A69CDEA00917384 /* Supporting Files */ = {
+		628F04621A6FA82D0004D20C /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				622BA42E1A69CDEA00917384 /* Info.plist */,
-				622BA42F1A69CDEA00917384 /* main.m */,
+				628F04631A6FA82D0004D20C /* images */,
+				628F04651A6FA82D0004D20C /* storyboards */,
 			);
-			name = "Supporting Files";
+			path = assets;
+			sourceTree = "<group>";
+		};
+		628F04631A6FA82D0004D20C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				628F04641A6FA82D0004D20C /* Images.xcassets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		628F04651A6FA82D0004D20C /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				628F04661A6FA82D0004D20C /* LaunchScreen.xib */,
+				628F04681A6FA82D0004D20C /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		628F046A1A6FA82D0004D20C /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				628F046D1A6FA82D0004D20C /* main.m */,
+				628F047F1A6FA9C50004D20C /* iOSAppDelegate.h */,
+				628F04801A6FA9C50004D20C /* iOSAppDelegate.m */,
+				62231CD01A6FAA41007E2688 /* iOSMainController.h */,
+				62231CD11A6FAA41007E2688 /* iOSMainController.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		628F04701A6FA82D0004D20C /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				628F04711A6FA82D0004D20C /* Info.plist */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		628F04721A6FA82D0004D20C /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				62231CFF1A6FABBB007E2688 /* assets */,
+				62231D051A6FABBB007E2688 /* classes */,
+				62231D0B1A6FABBB007E2688 /* configuration */,
+				62231D1B1A6FACB0007E2688 /* Relayr.framework */,
+			);
+			path = osx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		62231CD61A6FAA7F007E2688 /* Thermometer OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62231CF41A6FAA7F007E2688 /* Build configuration list for PBXNativeTarget "Thermometer OSX" */;
+			buildPhases = (
+				62231CD31A6FAA7F007E2688 /* Sources */,
+				62231CD41A6FAA7F007E2688 /* Frameworks */,
+				62231CD51A6FAA7F007E2688 /* Resources */,
+				62231CFE1A6FAB4D007E2688 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Thermometer OSX";
+			productName = thermometer;
+			productReference = 62231CD71A6FAA7F007E2688 /* Thermometer.app */;
+			productType = "com.apple.product-type.application";
+		};
 		622BA4291A69CDEA00917384 /* Thermometer iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 622BA44D1A69CDEB00917384 /* Build configuration list for PBXNativeTarget "Thermometer iOS" */;
@@ -128,6 +272,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Relayr;
 				TargetAttributes = {
+					62231CD61A6FAA7F007E2688 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					622BA4291A69CDEA00917384 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -147,56 +294,125 @@
 			projectRoot = "";
 			targets = (
 				622BA4291A69CDEA00917384 /* Thermometer iOS */,
+				62231CD61A6FAA7F007E2688 /* Thermometer OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		62231CD51A6FAA7F007E2688 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62231D0D1A6FABBB007E2688 /* thermometer.xcassets in Resources */,
+				62231D0E1A6FABBB007E2688 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		622BA4281A69CDEA00917384 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				622BA4391A69CDEA00917384 /* Main.storyboard in Resources */,
-				622BA43E1A69CDEA00917384 /* LaunchScreen.xib in Resources */,
-				622BA43B1A69CDEA00917384 /* Images.xcassets in Resources */,
+				628F04781A6FA82D0004D20C /* Images.xcassets in Resources */,
+				628F04791A6FA82D0004D20C /* LaunchScreen.xib in Resources */,
+				628F047A1A6FA82D0004D20C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		62231CD31A6FAA7F007E2688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62231D181A6FAC90007E2688 /* main.m in Sources */,
+				62231D191A6FAC90007E2688 /* OSXAppDelegate.m in Sources */,
+				62231D1A1A6FAC90007E2688 /* OSXMainController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		622BA4261A69CDEA00917384 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				622BA4361A69CDEA00917384 /* ViewController.m in Sources */,
-				622BA4331A69CDEA00917384 /* AppDelegate.m in Sources */,
-				622BA4301A69CDEA00917384 /* main.m in Sources */,
+				628F047C1A6FA82D0004D20C /* main.m in Sources */,
+				628F04811A6FA9C50004D20C /* iOSAppDelegate.m in Sources */,
+				62231CD21A6FAA41007E2688 /* iOSMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		622BA4371A69CDEA00917384 /* Main.storyboard */ = {
+		62231D031A6FABBB007E2688 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				622BA4381A69CDEA00917384 /* Base */,
+				62231D041A6FABBB007E2688 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		622BA43C1A69CDEA00917384 /* LaunchScreen.xib */ = {
+		628F04661A6FA82D0004D20C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				622BA43D1A69CDEA00917384 /* Base */,
+				628F04671A6FA82D0004D20C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		628F04681A6FA82D0004D20C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				628F04691A6FA82D0004D20C /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		62231CF51A6FAA7F007E2688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/osx",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/osx/configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = Thermometer;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		62231CF61A6FAA7F007E2688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/osx",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/osx/configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = Thermometer;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		622BA44B1A69CDEB00917384 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -283,7 +499,7 @@
 					"$(inherited)",
 					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
 				);
-				INFOPLIST_FILE = thermometer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Thermometer;
 			};
@@ -297,7 +513,7 @@
 					"$(inherited)",
 					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
 				);
-				INFOPLIST_FILE = thermometer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Thermometer;
 			};
@@ -306,6 +522,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		62231CF41A6FAA7F007E2688 /* Build configuration list for PBXNativeTarget "Thermometer OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62231CF51A6FAA7F007E2688 /* Debug */,
+				62231CF61A6FAA7F007E2688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		622BA4251A69CDEA00917384 /* Build configuration list for PBXProject "thermometer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

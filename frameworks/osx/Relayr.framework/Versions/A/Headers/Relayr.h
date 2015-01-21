@@ -1,8 +1,12 @@
-@import UIKit;
+@import Cocoa;
 
-FOUNDATION_EXPORT double iOSRelayrVersionNumber;
-FOUNDATION_EXPORT unsigned char const iOSRelayrVersionString[];
+//! Project version number for OSXRelayr.
+FOUNDATION_EXPORT double OSXRelayrVersionNumber;
 
+//! Project version string for OSXRelayr.
+FOUNDATION_EXPORT const unsigned char OSXRelayrVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <Relayr/PublicHeader.h>
 #import <Relayr/RelayrCloud.h>
 #import <Relayr/RelayrApp.h>
 #import <Relayr/RelayrUser.h>
@@ -18,6 +22,3 @@ FOUNDATION_EXPORT unsigned char const iOSRelayrVersionString[];
 #import <Relayr/RelayrOnboarding.h>
 #import <Relayr/RelayrFirmwareUpdate.h>
 #import <Relayr/RelayrErrors.h>
-
-#import <Relayr/RelayrID.h>
-#import <Relayr/RelayrIDSubscripting.h>
