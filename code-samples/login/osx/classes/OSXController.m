@@ -1,5 +1,5 @@
 #import "OSXController.h"      // Header
-#import <Relayr/Relayr.h>       // Relayr.framework
+#import <Relayr/Relayr.h>      // Relayr.framework
 
 #define RelayrAppID             @"a47ee4f4-65b1-48c5-8fb5-39e939cb95f9"
 #define RelayrAppSecret         @"ZPi4rtJdMv2BIIfjd9gPWFc7duYxCvGO"

@@ -671,7 +671,60 @@
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U7Q-8K-rxi">
+                                <rect key="frame" x="174" y="191" width="133" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Current temperature:" id="NFS-lG-y5U">
+                                    <font key="font" metaFont="systemBold" size="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jzY-bV-YlT">
+                                <rect key="frame" x="233" y="159" width="15" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="--" id="rpt-iA-ez4">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bOS-k1-gwh">
+                                <rect key="frame" x="185" y="127" width="111" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Current humidity:" id="LNT-vt-Zxx">
+                                    <font key="font" metaFont="systemBold" size="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tnV-RH-JwM">
+                                <rect key="frame" x="233" y="95" width="15" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="--" id="0qh-Kb-hWx">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jzY-bV-YlT" secondAttribute="centerX" id="MuX-dX-Vyu"/>
+                            <constraint firstAttribute="centerY" secondItem="bOS-k1-gwh" secondAttribute="centerY" id="cs3-f9-ScM"/>
+                            <constraint firstAttribute="centerX" secondItem="tnV-RH-JwM" secondAttribute="centerX" id="f0C-pK-j67"/>
+                            <constraint firstItem="tnV-RH-JwM" firstAttribute="top" secondItem="bOS-k1-gwh" secondAttribute="bottom" constant="15" id="iiV-zD-kJH"/>
+                            <constraint firstAttribute="centerX" secondItem="bOS-k1-gwh" secondAttribute="centerX" id="oZj-j6-f1r"/>
+                            <constraint firstAttribute="centerX" secondItem="U7Q-8K-rxi" secondAttribute="centerX" id="rbC-08-ZrQ"/>
+                            <constraint firstItem="bOS-k1-gwh" firstAttribute="top" secondItem="jzY-bV-YlT" secondAttribute="bottom" constant="15" id="tBq-tk-dlb"/>
+                            <constraint firstItem="jzY-bV-YlT" firstAttribute="top" secondItem="U7Q-8K-rxi" secondAttribute="bottom" constant="15" id="vdb-eR-gBP"/>
+                        </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                            <color key="value" red="0.19215686269999999" green="0.2901960784" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="currentHumidLabel" destination="tnV-RH-JwM" id="I7G-6i-1xd"/>
+                        <outlet property="currentTempLabel" destination="jzY-bV-YlT" id="T6r-2z-49f"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

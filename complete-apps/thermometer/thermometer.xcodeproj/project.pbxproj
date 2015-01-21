@@ -326,8 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				623CCB5A1A6FB53A0078FB36 /* OSXController.m in Sources */,
 				623CCB581A6FB53A0078FB36 /* main.m in Sources */,
+				623CCB5A1A6FB53A0078FB36 /* OSXController.m in Sources */,
 				623CCB591A6FB53A0078FB36 /* OSXAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,9 +1,9 @@
 #import "IOSController.h"   // Header
 #import <Relayr/Relayr.h>   // Relayr.framework
 
-#define RelayrAppID         @"72b0e324-74bf-4e07-82a5-da53e0133a1e"
-#define RelayrAppSecret     @"_ifE7jQHgZ9DKi5-TiLBXQOAT6ibp6Zf"
-#define RelayrRedirectURI   @"https://relayr.io"
+#define RelayrAppID             @"72b0e324-74bf-4e07-82a5-da53e0133a1e"
+#define RelayrAppSecret         @"_ifE7jQHgZ9DKi5-TiLBXQOAT6ibp6Zf"
+#define RelayrAppRedirectURI    @"https://relayr.io"
 
 @interface IOSController ()
 @property (weak,nonatomic) IBOutlet UILabel* currentTempLabel;
@@ -20,13 +20,13 @@
     [super viewDidLoad];
 
     // Retrieve the RelayrApp that you have created on the developer dashboard.
-    [RelayrApp appWithID:RelayrAppID OAuthClientSecret:RelayrAppSecret redirectURI:RelayrRedirectURI completion:^(NSError* error, RelayrApp* app) {
-        if (error) { return NSLog(@"There was an error retrieving the RelayrApp."); }
+    [RelayrApp appWithID:RelayrAppID OAuthClientSecret:RelayrAppSecret redirectURI:RelayrAppRedirectURI completion:^(NSError* error, RelayrApp* app) {
+        if (error) { return NSLog(@"There was an error retrieving the RelayrApp: %@", error); }
         storedApp = app;
 
         // Sign in an user into your Relayr App.
         [app signInUser:^(NSError* error, RelayrUser* user) {
-            if (error) { return NSLog(@"There was an error signing the user."); }
+            if (error) { return NSLog(@"There was an error signing the user: %@", error); }
 
             // Retrieve the transmitters and devices owned by the user.
             [user queryCloudForIoTs:^(NSError* error) {
@@ -49,7 +49,6 @@
                     {
                         _currentHumidLabel.text = [NSString stringWithFormat:@"%@ %%", input.value];
                     }
-
                 } error:^(NSError* error) {
                     NSLog(@"%@", error.localizedDescription);
                 }];
