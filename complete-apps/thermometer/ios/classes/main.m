@@ -1,8 +1,8 @@
 @import UIKit;              // Apple
-#import "iOSAppDelegate.h"     // Thermometer
+#import "IOSAppDelegate.h"  // Thermometer
 
 int main(int argc, char* argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([iOSAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([IOSAppDelegate class]));
     }
 }

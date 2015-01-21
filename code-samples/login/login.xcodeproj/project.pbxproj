@@ -10,11 +10,11 @@
 		6215148D1A6916F200770CE3 /* login.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6215147F1A6916F200770CE3 /* login.xcassets */; };
 		6215148E1A6916F200770CE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621514811A6916F200770CE3 /* LaunchScreen.xib */; };
 		6215148F1A6916F200770CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621514831A6916F200770CE3 /* Main.storyboard */; };
-		621514901A6916F200770CE3 /* iOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 621514871A6916F200770CE3 /* iOSAppDelegate.m */; };
-		621514911A6916F200770CE3 /* iOSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621514891A6916F200770CE3 /* iOSController.m */; };
-		621514921A6916F200770CE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6215148A1A6916F200770CE3 /* main.m */; };
 		621514991A69209900770CE3 /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621514971A69208900770CE3 /* Relayr.framework */; };
 		6215149A1A69209900770CE3 /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 621514971A69208900770CE3 /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		623CCB401A6FB3A50078FB36 /* IOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB3C1A6FB3A50078FB36 /* IOSAppDelegate.m */; };
+		623CCB411A6FB3A50078FB36 /* IOSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB3E1A6FB3A50078FB36 /* IOSController.m */; };
+		623CCB421A6FB3A50078FB36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB3F1A6FB3A50078FB36 /* main.m */; };
 		625028911A693F2300906368 /* login.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625028851A693F2300906368 /* login.xcassets */; };
 		625028921A693F2300906368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625028871A693F2300906368 /* Main.storyboard */; };
 		625028931A693F2300906368 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250288A1A693F2300906368 /* main.m */; };
@@ -54,13 +54,13 @@
 		6215147F1A6916F200770CE3 /* login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = login.xcassets; sourceTree = "<group>"; };
 		621514821A6916F200770CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		621514841A6916F200770CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		621514861A6916F200770CE3 /* iOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSAppDelegate.h; sourceTree = "<group>"; };
-		621514871A6916F200770CE3 /* iOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSAppDelegate.m; sourceTree = "<group>"; };
-		621514881A6916F200770CE3 /* iOSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSController.h; sourceTree = "<group>"; };
-		621514891A6916F200770CE3 /* iOSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSController.m; sourceTree = "<group>"; };
-		6215148A1A6916F200770CE3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6215148C1A6916F200770CE3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		621514971A69208900770CE3 /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
+		623CCB3B1A6FB3A50078FB36 /* IOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSAppDelegate.h; sourceTree = "<group>"; };
+		623CCB3C1A6FB3A50078FB36 /* IOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSAppDelegate.m; sourceTree = "<group>"; };
+		623CCB3D1A6FB3A50078FB36 /* IOSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSController.h; sourceTree = "<group>"; };
+		623CCB3E1A6FB3A50078FB36 /* IOSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSController.m; sourceTree = "<group>"; };
+		623CCB3F1A6FB3A50078FB36 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6250285F1A693CB800906368 /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		625028851A693F2300906368 /* login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = login.xcassets; sourceTree = "<group>"; };
 		625028881A693F2300906368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,11 +151,11 @@
 		621514851A6916F200770CE3 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				6215148A1A6916F200770CE3 /* main.m */,
-				621514861A6916F200770CE3 /* iOSAppDelegate.h */,
-				621514871A6916F200770CE3 /* iOSAppDelegate.m */,
-				621514881A6916F200770CE3 /* iOSController.h */,
-				621514891A6916F200770CE3 /* iOSController.m */,
+				623CCB3F1A6FB3A50078FB36 /* main.m */,
+				623CCB3B1A6FB3A50078FB36 /* IOSAppDelegate.h */,
+				623CCB3C1A6FB3A50078FB36 /* IOSAppDelegate.m */,
+				623CCB3D1A6FB3A50078FB36 /* IOSController.h */,
+				623CCB3E1A6FB3A50078FB36 /* IOSController.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -325,9 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				621514921A6916F200770CE3 /* main.m in Sources */,
-				621514901A6916F200770CE3 /* iOSAppDelegate.m in Sources */,
-				621514911A6916F200770CE3 /* iOSController.m in Sources */,
+				623CCB421A6FB3A50078FB36 /* main.m in Sources */,
+				623CCB401A6FB3A50078FB36 /* IOSAppDelegate.m in Sources */,
+				623CCB411A6FB3A50078FB36 /* IOSController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

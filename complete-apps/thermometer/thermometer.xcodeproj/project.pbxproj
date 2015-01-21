@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62231CD21A6FAA41007E2688 /* iOSMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62231CD11A6FAA41007E2688 /* iOSMainController.m */; };
 		62231D0D1A6FABBB007E2688 /* thermometer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62231D011A6FABBB007E2688 /* thermometer.xcassets */; };
 		62231D0E1A6FABBB007E2688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62231D031A6FABBB007E2688 /* Main.storyboard */; };
-		62231D181A6FAC90007E2688 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62231D131A6FAC90007E2688 /* main.m */; };
-		62231D191A6FAC90007E2688 /* OSXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62231D151A6FAC90007E2688 /* OSXAppDelegate.m */; };
-		62231D1A1A6FAC90007E2688 /* OSXMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62231D171A6FAC90007E2688 /* OSXMainController.m */; };
 		62231D1D1A6FACBA007E2688 /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62231D1B1A6FACB0007E2688 /* Relayr.framework */; };
 		62231D1E1A6FACBA007E2688 /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62231D1B1A6FACB0007E2688 /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		623CCB501A6FB4ED0078FB36 /* IOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB4C1A6FB4ED0078FB36 /* IOSAppDelegate.m */; };
+		623CCB511A6FB4ED0078FB36 /* IOSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB4E1A6FB4ED0078FB36 /* IOSController.m */; };
+		623CCB521A6FB4ED0078FB36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB4F1A6FB4ED0078FB36 /* main.m */; };
+		623CCB581A6FB53A0078FB36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB531A6FB53A0078FB36 /* main.m */; };
+		623CCB591A6FB53A0078FB36 /* OSXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB551A6FB53A0078FB36 /* OSXAppDelegate.m */; };
+		623CCB5A1A6FB53A0078FB36 /* OSXController.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB571A6FB53A0078FB36 /* OSXController.m */; };
 		628F04781A6FA82D0004D20C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628F04641A6FA82D0004D20C /* Images.xcassets */; };
 		628F04791A6FA82D0004D20C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628F04661A6FA82D0004D20C /* LaunchScreen.xib */; };
 		628F047A1A6FA82D0004D20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628F04681A6FA82D0004D20C /* Main.storyboard */; };
-		628F047C1A6FA82D0004D20C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F046D1A6FA82D0004D20C /* main.m */; };
-		628F04811A6FA9C50004D20C /* iOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F04801A6FA9C50004D20C /* iOSAppDelegate.m */; };
 		62D152F71A69CF240014F905 /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D152F51A69CF1B0014F905 /* Relayr.framework */; };
 		62D152F81A69CF240014F905 /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62D152F51A69CF1B0014F905 /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -50,26 +50,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		62231CD01A6FAA41007E2688 /* iOSMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSMainController.h; sourceTree = "<group>"; };
-		62231CD11A6FAA41007E2688 /* iOSMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSMainController.m; sourceTree = "<group>"; };
 		62231CD71A6FAA7F007E2688 /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62231D011A6FABBB007E2688 /* thermometer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = thermometer.xcassets; sourceTree = "<group>"; };
 		62231D041A6FABBB007E2688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62231D0C1A6FABBB007E2688 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62231D131A6FAC90007E2688 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		62231D141A6FAC90007E2688 /* OSXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXAppDelegate.h; sourceTree = "<group>"; };
-		62231D151A6FAC90007E2688 /* OSXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXAppDelegate.m; sourceTree = "<group>"; };
-		62231D161A6FAC90007E2688 /* OSXMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXMainController.h; sourceTree = "<group>"; };
-		62231D171A6FAC90007E2688 /* OSXMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXMainController.m; sourceTree = "<group>"; };
 		62231D1B1A6FACB0007E2688 /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/osx/Relayr.framework; sourceTree = "<group>"; };
 		622BA42A1A69CDEA00917384 /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		623CCB4B1A6FB4ED0078FB36 /* IOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSAppDelegate.h; sourceTree = "<group>"; };
+		623CCB4C1A6FB4ED0078FB36 /* IOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSAppDelegate.m; sourceTree = "<group>"; };
+		623CCB4D1A6FB4ED0078FB36 /* IOSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSController.h; sourceTree = "<group>"; };
+		623CCB4E1A6FB4ED0078FB36 /* IOSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSController.m; sourceTree = "<group>"; };
+		623CCB4F1A6FB4ED0078FB36 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		623CCB531A6FB53A0078FB36 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		623CCB541A6FB53A0078FB36 /* OSXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXAppDelegate.h; sourceTree = "<group>"; };
+		623CCB551A6FB53A0078FB36 /* OSXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXAppDelegate.m; sourceTree = "<group>"; };
+		623CCB561A6FB53A0078FB36 /* OSXController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXController.h; sourceTree = "<group>"; };
+		623CCB571A6FB53A0078FB36 /* OSXController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXController.m; sourceTree = "<group>"; };
 		628F04641A6FA82D0004D20C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		628F04671A6FA82D0004D20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		628F04691A6FA82D0004D20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		628F046D1A6FA82D0004D20C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		628F04711A6FA82D0004D20C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		628F047F1A6FA9C50004D20C /* iOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSAppDelegate.h; sourceTree = "<group>"; };
-		628F04801A6FA9C50004D20C /* iOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSAppDelegate.m; sourceTree = "<group>"; };
 		62D152F51A69CF1B0014F905 /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,11 +121,11 @@
 		62231D051A6FABBB007E2688 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				62231D131A6FAC90007E2688 /* main.m */,
-				62231D141A6FAC90007E2688 /* OSXAppDelegate.h */,
-				62231D151A6FAC90007E2688 /* OSXAppDelegate.m */,
-				62231D161A6FAC90007E2688 /* OSXMainController.h */,
-				62231D171A6FAC90007E2688 /* OSXMainController.m */,
+				623CCB531A6FB53A0078FB36 /* main.m */,
+				623CCB541A6FB53A0078FB36 /* OSXAppDelegate.h */,
+				623CCB551A6FB53A0078FB36 /* OSXAppDelegate.m */,
+				623CCB561A6FB53A0078FB36 /* OSXController.h */,
+				623CCB571A6FB53A0078FB36 /* OSXController.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -196,11 +196,11 @@
 		628F046A1A6FA82D0004D20C /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				628F046D1A6FA82D0004D20C /* main.m */,
-				628F047F1A6FA9C50004D20C /* iOSAppDelegate.h */,
-				628F04801A6FA9C50004D20C /* iOSAppDelegate.m */,
-				62231CD01A6FAA41007E2688 /* iOSMainController.h */,
-				62231CD11A6FAA41007E2688 /* iOSMainController.m */,
+				623CCB4F1A6FB4ED0078FB36 /* main.m */,
+				623CCB4B1A6FB4ED0078FB36 /* IOSAppDelegate.h */,
+				623CCB4C1A6FB4ED0078FB36 /* IOSAppDelegate.m */,
+				623CCB4D1A6FB4ED0078FB36 /* IOSController.h */,
+				623CCB4E1A6FB4ED0078FB36 /* IOSController.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -326,9 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62231D181A6FAC90007E2688 /* main.m in Sources */,
-				62231D191A6FAC90007E2688 /* OSXAppDelegate.m in Sources */,
-				62231D1A1A6FAC90007E2688 /* OSXMainController.m in Sources */,
+				623CCB5A1A6FB53A0078FB36 /* OSXController.m in Sources */,
+				623CCB581A6FB53A0078FB36 /* main.m in Sources */,
+				623CCB591A6FB53A0078FB36 /* OSXAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +336,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				628F047C1A6FA82D0004D20C /* main.m in Sources */,
-				628F04811A6FA9C50004D20C /* iOSAppDelegate.m in Sources */,
-				62231CD21A6FAA41007E2688 /* iOSMainController.m in Sources */,
+				623CCB501A6FB4ED0078FB36 /* IOSAppDelegate.m in Sources */,
+				623CCB521A6FB4ED0078FB36 /* main.m in Sources */,
+				623CCB511A6FB4ED0078FB36 /* IOSController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +529,7 @@
 				62231CF61A6FAA7F007E2688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		622BA4251A69CDEA00917384 /* Build configuration list for PBXProject "thermometer" */ = {
 			isa = XCConfigurationList;

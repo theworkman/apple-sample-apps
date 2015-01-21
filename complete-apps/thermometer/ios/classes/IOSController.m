@@ -1,16 +1,16 @@
-#import "iOSMainController.h"   // Header
-#import <Relayr/Relayr.h>       // Relayr.framework
+#import "IOSController.h"   // Header
+#import <Relayr/Relayr.h>   // Relayr.framework
 
 #define RelayrAppID         @"72b0e324-74bf-4e07-82a5-da53e0133a1e"
 #define RelayrAppSecret     @"_ifE7jQHgZ9DKi5-TiLBXQOAT6ibp6Zf"
 #define RelayrRedirectURI   @"https://relayr.io"
 
-@interface iOSMainController ()
+@interface IOSController ()
 @property (weak,nonatomic) IBOutlet UILabel* currentTempLabel;
 @property (weak,nonatomic) IBOutlet UILabel* currentHumidLabel;
 @end
 
-@implementation iOSMainController
+@implementation IOSController
 
 #pragma mark - Public API
 

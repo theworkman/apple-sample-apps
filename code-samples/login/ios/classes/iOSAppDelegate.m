@@ -1,9 +1,9 @@
-#import "iOSAppDelegate.h"      // Header
+#import "IOSAppDelegate.h"      // Header
 
-@interface iOSAppDelegate ()
+@interface IOSAppDelegate ()
 @end
 
-@implementation iOSAppDelegate
+@implementation IOSAppDelegate
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {

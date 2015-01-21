@@ -1,6 +1,6 @@
 @import UIKit;      // Apple
 
-@interface iOSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface IOSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow* window;
 

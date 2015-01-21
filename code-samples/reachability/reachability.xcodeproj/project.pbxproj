@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		623CCB481A6FB4420078FB36 /* IOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB441A6FB4420078FB36 /* IOSAppDelegate.m */; };
+		623CCB491A6FB4420078FB36 /* IOSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB461A6FB4420078FB36 /* IOSController.m */; };
+		623CCB4A1A6FB4420078FB36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 623CCB471A6FB4420078FB36 /* main.m */; };
 		6248025E1A67F83500A2C004 /* reachability.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6248024A1A67F7A400A2C004 /* reachability.xcassets */; };
 		6248025F1A67F83500A2C004 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6248024C1A67F7A400A2C004 /* LaunchScreen.xib */; };
 		624802601A67F83500A2C004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6248024E1A67F7A400A2C004 /* Main.storyboard */; };
-		624802611A67F83E00A2C004 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 624802511A67F7A400A2C004 /* main.m */; };
-		624802621A67F83E00A2C004 /* IOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 624802531A67F7A400A2C004 /* IOSAppDelegate.m */; };
-		624802631A67F83E00A2C004 /* IOSMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624802551A67F7A400A2C004 /* IOSMainController.m */; };
 		62D491D41A680129001D409B /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D491D21A680123001D409B /* Relayr.framework */; };
 		62D491D51A680129001D409B /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62D491D21A680123001D409B /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62D492011A680BAC001D409B /* reachability.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D492001A680BAC001D409B /* reachability.xcassets */; };
@@ -50,15 +50,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		623CCB431A6FB4420078FB36 /* IOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSAppDelegate.h; sourceTree = "<group>"; };
+		623CCB441A6FB4420078FB36 /* IOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSAppDelegate.m; sourceTree = "<group>"; };
+		623CCB451A6FB4420078FB36 /* IOSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSController.h; sourceTree = "<group>"; };
+		623CCB461A6FB4420078FB36 /* IOSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSController.m; sourceTree = "<group>"; };
+		623CCB471A6FB4420078FB36 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		624802201A67F54900A2C004 /* Reachability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reachability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6248024A1A67F7A400A2C004 /* reachability.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = reachability.xcassets; sourceTree = "<group>"; };
 		6248024D1A67F7A400A2C004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6248024F1A67F7A400A2C004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		624802511A67F7A400A2C004 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		624802521A67F7A400A2C004 /* IOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSAppDelegate.h; sourceTree = "<group>"; };
-		624802531A67F7A400A2C004 /* IOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSAppDelegate.m; sourceTree = "<group>"; };
-		624802541A67F7A400A2C004 /* IOSMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSMainController.h; sourceTree = "<group>"; };
-		624802551A67F7A400A2C004 /* IOSMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSMainController.m; sourceTree = "<group>"; };
 		624802571A67F7A400A2C004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62D491D21A680123001D409B /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
 		62D491DD1A680ACA001D409B /* Reachability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reachability.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,11 +151,11 @@
 		624802501A67F7A400A2C004 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				624802511A67F7A400A2C004 /* main.m */,
-				624802521A67F7A400A2C004 /* IOSAppDelegate.h */,
-				624802531A67F7A400A2C004 /* IOSAppDelegate.m */,
-				624802541A67F7A400A2C004 /* IOSMainController.h */,
-				624802551A67F7A400A2C004 /* IOSMainController.m */,
+				623CCB471A6FB4420078FB36 /* main.m */,
+				623CCB431A6FB4420078FB36 /* IOSAppDelegate.h */,
+				623CCB441A6FB4420078FB36 /* IOSAppDelegate.m */,
+				623CCB451A6FB4420078FB36 /* IOSController.h */,
+				623CCB461A6FB4420078FB36 /* IOSController.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -325,9 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624802611A67F83E00A2C004 /* main.m in Sources */,
-				624802621A67F83E00A2C004 /* IOSAppDelegate.m in Sources */,
-				624802631A67F83E00A2C004 /* IOSMainController.m in Sources */,
+				623CCB481A6FB4420078FB36 /* IOSAppDelegate.m in Sources */,
+				623CCB4A1A6FB4420078FB36 /* main.m in Sources */,
+				623CCB491A6FB4420078FB36 /* IOSController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
