@@ -2,8 +2,8 @@
 #import <Relayr/Relayr.h>       // Relayr.framework
 
 @interface OSXController ()
-@property (strong) IBOutlet NSTextField* reachabilityLabel;
-@property (strong) IBOutlet NSTextField* emailLabel;
+@property (strong,nonatomic) IBOutlet NSTextField* reachabilityLabel;
+@property (strong,nonatomic) IBOutlet NSTextField* emailLabel;
 @end
 
 @implementation OSXController

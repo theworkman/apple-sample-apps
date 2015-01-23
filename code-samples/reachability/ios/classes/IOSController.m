@@ -2,8 +2,8 @@
 #import <Relayr/Relayr.h>           // Relayr.framework
 
 @interface IOSController ()
-@property (strong,nonatomic) IBOutlet UILabel* reachabilityLabel;
-@property (strong, nonatomic) IBOutlet UILabel* emailLabel;
+@property (weak,nonatomic) IBOutlet UILabel* reachabilityLabel;
+@property (weak,nonatomic) IBOutlet UILabel* emailLabel;
 @end
 
 @implementation IOSController
