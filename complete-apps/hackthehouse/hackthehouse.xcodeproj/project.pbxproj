@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62F52C8F1A9FD6C1008CE2AF /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F52C8D1A9FD6BB008CE2AF /* Relayr.framework */; };
+		62F52C901A9FD6C1008CE2AF /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62F52C8D1A9FD6BB008CE2AF /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		62F52C971A9FD761008CE2AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F52C961A9FD761008CE2AF /* main.m */; };
+		62F52C9C1A9FD831008CE2AF /* IOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F52C991A9FD831008CE2AF /* IOSAppDelegate.m */; };
+		62F52C9D1A9FD831008CE2AF /* IOSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F52C9B1A9FD831008CE2AF /* IOSController.m */; };
+		62F52CA61A9FD843008CE2AF /* ios.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F52CA01A9FD843008CE2AF /* ios.xcassets */; };
+		62F52CA71A9FD843008CE2AF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F52CA21A9FD843008CE2AF /* LaunchScreen.xib */; };
+		62F52CA81A9FD843008CE2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F52CA41A9FD843008CE2AF /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62F52C911A9FD6C1008CE2AF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				62F52C901A9FD6C1008CE2AF /* Relayr.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		62F52C631A9FD646008CE2AF /* Hack the House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hack the House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62F52C8D1A9FD6BB008CE2AF /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
+		62F52C931A9FD6FC008CE2AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62F52C961A9FD761008CE2AF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62F52C981A9FD831008CE2AF /* IOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSAppDelegate.h; sourceTree = "<group>"; };
+		62F52C991A9FD831008CE2AF /* IOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSAppDelegate.m; sourceTree = "<group>"; };
+		62F52C9A1A9FD831008CE2AF /* IOSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSController.h; sourceTree = "<group>"; };
+		62F52C9B1A9FD831008CE2AF /* IOSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSController.m; sourceTree = "<group>"; };
+		62F52CA01A9FD843008CE2AF /* ios.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ios.xcassets; sourceTree = "<group>"; };
+		62F52CA31A9FD843008CE2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		62F52CA51A9FD843008CE2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62F52C601A9FD646008CE2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62F52C8F1A9FD6C1008CE2AF /* Relayr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62F52C5A1A9FD646008CE2AF = {
+			isa = PBXGroup;
+			children = (
+				62F52C8C1A9FD6B3008CE2AF /* ios */,
+				62F52C641A9FD646008CE2AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62F52C641A9FD646008CE2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62F52C631A9FD646008CE2AF /* Hack the House.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62F52C8C1A9FD6B3008CE2AF /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				62F52C9E1A9FD843008CE2AF /* assets */,
+				62F52C951A9FD761008CE2AF /* classes */,
+				62F52C921A9FD6FC008CE2AF /* configuration */,
+				62F52C8D1A9FD6BB008CE2AF /* Relayr.framework */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		62F52C921A9FD6FC008CE2AF /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				62F52C931A9FD6FC008CE2AF /* Info.plist */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		62F52C951A9FD761008CE2AF /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				62F52C961A9FD761008CE2AF /* main.m */,
+				62F52C981A9FD831008CE2AF /* IOSAppDelegate.h */,
+				62F52C991A9FD831008CE2AF /* IOSAppDelegate.m */,
+				62F52C9A1A9FD831008CE2AF /* IOSController.h */,
+				62F52C9B1A9FD831008CE2AF /* IOSController.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		62F52C9E1A9FD843008CE2AF /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				62F52C9F1A9FD843008CE2AF /* images */,
+				62F52CA11A9FD843008CE2AF /* storyboards */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		62F52C9F1A9FD843008CE2AF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				62F52CA01A9FD843008CE2AF /* ios.xcassets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		62F52CA11A9FD843008CE2AF /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				62F52CA21A9FD843008CE2AF /* LaunchScreen.xib */,
+				62F52CA41A9FD843008CE2AF /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62F52C621A9FD646008CE2AF /* Hack the House iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62F52C861A9FD647008CE2AF /* Build configuration list for PBXNativeTarget "Hack the House iOS" */;
+			buildPhases = (
+				62F52C5F1A9FD646008CE2AF /* Sources */,
+				62F52C601A9FD646008CE2AF /* Frameworks */,
+				62F52C611A9FD646008CE2AF /* Resources */,
+				62F52C911A9FD6C1008CE2AF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hack the House iOS";
+			productName = hackthehouse;
+			productReference = 62F52C631A9FD646008CE2AF /* Hack the House.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62F52C5B1A9FD646008CE2AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = relayr;
+				TargetAttributes = {
+					62F52C621A9FD646008CE2AF = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 62F52C5E1A9FD646008CE2AF /* Build configuration list for PBXProject "hackthehouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62F52C5A1A9FD646008CE2AF;
+			productRefGroup = 62F52C641A9FD646008CE2AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62F52C621A9FD646008CE2AF /* Hack the House iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62F52C611A9FD646008CE2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62F52CA61A9FD843008CE2AF /* ios.xcassets in Resources */,
+				62F52CA71A9FD843008CE2AF /* LaunchScreen.xib in Resources */,
+				62F52CA81A9FD843008CE2AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62F52C5F1A9FD646008CE2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62F52C971A9FD761008CE2AF /* main.m in Sources */,
+				62F52C9C1A9FD831008CE2AF /* IOSAppDelegate.m in Sources */,
+				62F52C9D1A9FD831008CE2AF /* IOSController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62F52CA21A9FD843008CE2AF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62F52CA31A9FD843008CE2AF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		62F52CA41A9FD843008CE2AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62F52CA51A9FD843008CE2AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62F52C841A9FD647008CE2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62F52C851A9FD647008CE2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62F52C871A9FD647008CE2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
+				);
+				GCC_C_LANGUAGE_STANDARD = c11;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Hack the House";
+			};
+			name = Debug;
+		};
+		62F52C881A9FD647008CE2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
+				);
+				GCC_C_LANGUAGE_STANDARD = c11;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Hack the House";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62F52C5E1A9FD646008CE2AF /* Build configuration list for PBXProject "hackthehouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62F52C841A9FD647008CE2AF /* Debug */,
+				62F52C851A9FD647008CE2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62F52C861A9FD647008CE2AF /* Build configuration list for PBXNativeTarget "Hack the House iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62F52C871A9FD647008CE2AF /* Debug */,
+				62F52C881A9FD647008CE2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62F52C5B1A9FD646008CE2AF /* Project object */;
+}

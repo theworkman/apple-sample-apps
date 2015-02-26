@@ -1,4 +1,4 @@
-@class RelayrDevice;    // Relayr.framework (Public)
+@class RelayrDevice;    // Relayr (Public)
 @import Foundation;     // Apple
 
 #pragma mark - Definitions
@@ -25,6 +25,7 @@ typedef NS_ENUM(NSUInteger, RelayrConnectionType) {
  */
 typedef NS_ENUM(NSUInteger, RelayrConnectionProtocol) {
     RelayrConnectionProtocolUnknwon,
+    RelayrConnectionProtocolHTTP,
     RelayrConnectionProtocolMQTT,
     RelayrConnectionProtocolBLE
 };
@@ -154,6 +155,6 @@ typedef NS_ENUM(NSUInteger, RelayrConnectionState) {
  *  @abstract Removes all subscriptions for this connection.
  *  @discussion All subscriptions, whether blocks or target objects are removed.
  */
-- (void)removeAllSubscriptions;
+- (void)unsubscribeToAll;
 
 @end

@@ -37,10 +37,10 @@
                 if (!transmitter) { return NSLog(@"The user has no wunderbars."); }
 
                 // The Relayr cloud mantains a specific list of "meanings" specifying the capabilities of devices. In this case we are interested in "temperature"
-                RelayrDevice* device = [transmitter devicesWithInputMeaning:@"temperature"].anyObject;
+                RelayrDevice* device = [transmitter devicesWithReadingMeanings:@[@"temperature"]].anyObject;
                 if (!device) { return NSLog(@"The user hasn't onboard the temperature sensor."); }
 
-                [device subscribeToAllInputsWithBlock:^(RelayrDevice* device, RelayrInput* input, BOOL* unsubscribe) {
+                [device subscribeToAllReadingsWithBlock:^(RelayrDevice *device, RelayrReading* input, BOOL* unsubscribe) {
                     if ([input.meaning isEqualToString:@"temperature"])
                     {
                         _currentTempLabel.text = [NSString stringWithFormat:@"%@ ºC", input.value];
@@ -49,7 +49,7 @@
                     {
                         _currentHumidLabel.text = [NSString stringWithFormat:@"%@ %%", input.value];
                     }
-                } error:^(NSError* error) {
+                } error:^(NSError *error) {
                     NSLog(@"%@", error.localizedDescription);
                 }];
             }];

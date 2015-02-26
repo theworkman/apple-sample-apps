@@ -1,10 +1,10 @@
-@class RelayrApp;                       // Relayr.framework (Public)
-@class RelayrPublisher;                 // Relayr.framework (Public)
-@class RelayrTransmitter;               // Relayr.framework (Public)
-@class RelayrDevice;                    // Relayr.framework (Public)
-#import <Relayr/RelayrID.h>             // Relayr.framework (Public)
-#import <Relayr/RelayrIDSubscripting.h> // Relayr.framework (Utilities/Collections)
-#import <Relayr/NSSet+RelayrID.h>       // Relayr.framework (Utilities/Collections)
+@class RelayrApp;                       // Relayr (Public)
+@class RelayrPublisher;                 // Relayr (Public)
+@class RelayrTransmitter;               // Relayr (Public/IoTs)
+@class RelayrDevice;                    // Relayr (Public/IoTs)
+#import <Relayr/RelayrID.h>             // Relayr (Public)
+#import <Relayr/RelayrIDSubscripting.h> // Relayr (Utilities/Collections)
+#import <Relayr/NSSet+RelayrID.h>       // Relayr (Utilities/Collections)
 @import Foundation;                     // Apple
 
 /*!
@@ -129,6 +129,61 @@
  *  @see queryCloudForUserInfo:
  */
 - (void)queryCloudForIoTs:(void (^)(NSError* error))completion;
+
+/*!
+ *  @abstract It returns an <code>NSSet</code> grouping all possible user's transmitter connected to devices that are capable of read the meanings passed as argument.
+ *  @discussion If no transmitters are found, <code>nil</code> is returned.
+ *
+ *  @param meanings The specific meanings that the readings must be capable to <i>read</i>.
+ *	@return <code>NSSet</code> grouping all capable <code>RelayrTransmitter</code> objects.
+ *
+ *  @see RelayrTransmitter
+ */
+- (NSSet <RelayrIDSubscripting>*)transmittersWithReadingMeanings:(NSArray*)meanings;
+
+/*!
+ *  @abstract It returns an <code>NSSet</code> grouping all possible user's devices that are capable of read the meanings passed as argument.
+ *  @discussion If no devices are found, <code>nil</code> is returned.
+ *
+ *  @param meanings The specific meanings that the readings must be capable to <i>read</i>.
+ *	@return <code>NSSet</code> grouping all capable <code>RelayrDevice</code> objects.
+ *
+ *  @see RelayrDevice
+ */
+- (NSSet <RelayrIDSubscripting>*)devicesWithReadingMeanings:(NSArray*)meanings;
+
+/*!
+ *  @abstract It returns an <code>NSSet</code> grouping all possible user's devices that are capable of sending the meanings passed as argument.
+ *  @discussion If no devices are found, <code>nil</code> is returned.
+ *
+ *  @param meanings The specific meanings that the command must be capable to <i>send</i>.
+ *	@return <code>NSSet</code> grouping all capable <code>RelayrDevice</code> objects.
+ *
+ *  @see RelayrDevice
+ */
+- (NSSet <RelayrIDSubscripting>*)devicesWithCommandMeanings:(NSArray*)meanings;
+
+/*!
+ *  @abstract It returns an <code>NSSet</code> grouping all possible <code>RelayrReading</code> objects that are capable of <i>read</i> the meanings passed as argument.
+ *  @discussion If no devices are found, <code>nil</code> is returned.
+ *
+ *  @param meanings The specific meanings that the readings must be capable to <i>read</i>.
+ *	@return <code>NSSet</code> grouping all capable <code>RelayrDevice</code> objects.
+ *
+ *  @see RelayrReading
+ */
+- (NSSet <RelayrIDSubscripting>*)readingsWithMeanings:(NSArray*)meanings;
+
+/*!
+ *  @abstract It returns an <code>NSSet</code> grouping all possible <code>RelayrCommand</code> objects that are capable of <i>sending</i> the meanings passed as argument.
+ *  @discussion If no devices are found, <code>nil</code> is returned.
+ *
+ *  @param meanings The specific meanings that the readings must be capable to <i>send</i>.
+ *	@return <code>NSSet</code> grouping all capable <code>RelayrCommand</code> objects.
+ *
+ *  @see RelayrReading
+ */
+- (NSSet <RelayrIDSubscripting>*)commandsWithMeanings:(NSArray*)meanings;
 
 /*!
  *  @abstract Creates/registers a Transmitter entity on the Relayr cloud.

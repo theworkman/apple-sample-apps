@@ -1,6 +1,7 @@
-@class RelayrUser;              // Relayr.framework (Public)
-@class RelayrInput;             // Relayr.framework (Public/IoT)
-@import Foundation;             // Apple
+@class RelayrUser;                      // Relayr (Public)
+@class RelayrReading;                   // Relayr (Public/IoTs)
+#import <Relayr/NSSet+RelayrID.h>       // Relayr (Utilities/Collections)
+@import Foundation;                     // Apple
 
 /*!
  *  @abstract Specifies the basic functionality of a device.
@@ -38,33 +39,45 @@
 
 /*!
  *  @abstract Returns an array of all possible readings the device can collect.
- *  @discussion Each item in this array is an object of type <code>RelayrInput</code>. 
+ *  @discussion Each item in this array is an object of type <code>RelayrReading</code>. 
  *      Each input represents a different kind of reading.
  *      That is, a <code>RelayrDevice</code> can have a luminosity sensor and a gyroscope;
- *      Therefore, this array would have two different inputs.
+ *      Therefore, this array would have two different readings.
  *
- *  @see RelayrInput
+ *  @see RelayrReading
  */
-@property (readonly,nonatomic) NSSet* inputs;
+@property (readonly,nonatomic) NSSet* readings;
 
 /*!
- *  @abstract Returns a <code>RelayrInput</code> supporting the passed meaning.
- *  @discussion If there are more than one input supporting the passed meaning, only one will be returned. It could be different on different passes of the method called (since the inputs are stored in a <code>NSSet</code>).
- *  @param meaning <code>NSString</code> specifying the desired <code>meaning</code>.
- *	@return <code>RelayrInput</code> or <code>nil</code>.
- *
- *  @see RelayrInput
- */
-- (RelayrInput*)inputWithMeaning:(NSString*)meaning;
-
-/*!
- *  @abstract Returns an array of possible Outputs a Device is capable of receiving.
+ *  @abstract Returns an array of possible Commands a Device is capable of receiving.
  *  @discussion By 'Output' we refer to an object with commands or configuration settings sent to a Device.
  *	These are usually infrarred commands, ultrasound pulses etc.
- *	Each item in this array is an object of type <code>RelayrOutput</code>.
+ *	Each item in this array is an object of type <code>RelayrCommand</code>.
  *
- *  @see RelayrOutput
+ *  @see RelayrCommand
  */
-@property (readonly,nonatomic) NSSet* outputs;
+@property (readonly,nonatomic) NSSet* commands;
+
+/*!
+ *  @abstract It returns an <code>NSSet</code> grouping all possible <code>RelayrReading</code> objects that are capable of <i>read</i> the meanings passed as argument.
+ *  @discussion If no readings are found, an empty set is returned.
+ *
+ *  @param meanings The specific meanings that the readings must be capable to <i>read</i>.
+ *	@return <code>NSSet</code> grouping all capable <code>RelayrDevice</code> objects.
+ *
+ *  @see RelayrReading
+ */
+- (NSSet*)readingsWithMeanings:(NSArray*)meanings;
+
+/*!
+ *  @abstract It returns an <code>NSSet</code> grouping all possible <code>RelayrCommand</code> objects that are capable of <i>sending</i> the meanings passed as argument.
+ *  @discussion If no commands are found, an empty set is returned.
+ *
+ *  @param meanings The specific meanings that the command must be capable to <i>read</i>.
+ *	@return <code>NSSet</code> grouping all capable <code>RelayrDevice</code> objects.
+ *
+ *  @see RelayrCommand
+ */
+- (NSSet*)commandsWithMeanings:(NSArray*)meanings;
 
 @end
