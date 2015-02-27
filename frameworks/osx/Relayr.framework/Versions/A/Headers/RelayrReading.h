@@ -4,24 +4,24 @@
 @import Foundation;         // Apple
 
 /*!
- *  @abstract A Block executed when the input (the reading) receives data.
+ *  @abstract A Block executed when the reading (the reading) receives data.
  *  @discussion All RelayrSDK objects (except when explicitly said otherwise) will return the same instance when copied (e.g.: when added to a dictionary). Thus the <code>NSCopying</code> method <code>-copyWithZone:</code> will return the same instance. Same happening with <code>NSMutableCopying</code> method <code>-mutableCopyWithZone:</code>.
  *
  *  @param device The <code>RelayrDevice</code> sending the data.
- *  @param input <code>RelayrReading</code> specifying the meaning and value of the data received.
+ *  @param reading <code>RelayrReading</code> specifying the meaning and value of the data received.
  *  @param unsubscribe A boolean pointer that can be set to <code>YES</code> if you wish to stop the block from being further executed.
  */
-typedef void (^RelayrReadingDataReceivedBlock)(RelayrDevice* device, RelayrReading* input, BOOL* unsubscribe);
+typedef void (^RelayrReadingDataReceivedBlock)(RelayrDevice* device, RelayrReading* reading, BOOL* unsubscribe);
 
 /*!
- *  @abstract A Block executed when the input receives an error.
+ *  @abstract A Block executed when the reading receives an error.
  *
  *  @param error <code>NSError</code> describing the specific error.
  */
 typedef void (^RelayrReadingErrorReceivedBlock)(NSError* error);
 
 /*!
- *  @abstract References the type of input (reading) a relayr Device (sensor) can collect.
+ *  @abstract References the type of reading a relayr Device (sensor) can collect.
  *  @discussion This object has a single 'meaning', however, This meaning could consist of one or more values. 
  *	For example: The Luminosity meaning is represented by a single value  
  *	however, the Color meaning consists of three or four values (red, green, blue, and white).
@@ -29,15 +29,15 @@ typedef void (^RelayrReadingErrorReceivedBlock)(NSError* error);
 @interface RelayrReading : NSObject <NSCopying,NSMutableCopying>
 
 /*!
- *  @abstract The source of the input (reading).
+ *  @abstract The source of the reading.
  *  @discussion This property will never be <code>nil</code>.
  *      Although it is described as <code>RelayrDeviceModel</code>, 
- *		this object might be a full <code>RelayrDevice</code> if the input is associated with a <code>RelayrDevice</code>.
+ *		this object might be a full <code>RelayrDevice</code> if the reading is associated with a <code>RelayrDevice</code>.
  */
 @property (readonly,weak,nonatomic) RelayrDeviceModel* deviceModel;
 
 /*!
- *  @abstract The name of the input (reading) as it is defined on the relayr platform.
+ *  @abstract The name of the reading as it is defined on the relayr platform.
  */
 @property (readonly,nonatomic) NSString* meaning;
 
@@ -47,7 +47,7 @@ typedef void (^RelayrReadingErrorReceivedBlock)(NSError* error);
 @property (readonly,nonatomic) NSString* path;
 
 /*!
- *  @abstract The unit in which the input (reading) is measured.
+ *  @abstract The unit in which the reading is measured.
  *  @discussion If this property is <code>nil</code>, no unit is specified.
  */
 @property (readonly,nonatomic) NSString* unit;
@@ -98,7 +98,7 @@ typedef void (^RelayrReadingErrorReceivedBlock)(NSError* error);
  *
  *  @param block This block will be executed everytime data is available. The block contains three parameters:
  *      - <code>device</code>. The device producing the reading.
- *      - <code>input</code>. The reading value received.
+ *      - <code>reading</code>. The reading value received.
  *      - <code>unsubscribe</code>. A Boolean variable, that when set to <code>NO</code>, will stop the subscription.
  *  @param errorBlock A Block executed every time an error occurs. The error could be received because the subscription could not be completed, or because the subscription is stopped by an external factor.
  */
@@ -106,7 +106,7 @@ typedef void (^RelayrReadingErrorReceivedBlock)(NSError* error);
                      error:(RelayrReadingErrorReceivedBlock)errorBlock;
 
 /*!
- *  @abstract Subscribes the target object to a specific input of a <code>RelayrDevice</code> instance.
+ *  @abstract Subscribes the target object to a specific reading of a <code>RelayrDevice</code> instance.
  *  @discussion Regardless of how the device is connected (Web/Cloud, Bluetooth, etc.), the action is called as soon as the data is available.
  *
  *  @param target The object where the <code>action</code> is called onto.

@@ -3,4 +3,6 @@
 
 @interface IOSMainNavController : UINavigationController <RelayrControllers>
 
+- (void)signOut;
+
 @end

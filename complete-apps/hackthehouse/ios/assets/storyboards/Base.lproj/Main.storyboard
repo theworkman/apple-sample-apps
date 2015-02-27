@@ -70,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xib-ew-FDN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="610" y="560"/>
+            <point key="canvasLocation" x="600" y="560"/>
         </scene>
         <!--Main Nav Controller-->
         <scene sceneID="7ud-N0-abO">
@@ -88,6 +88,7 @@
                     </navigationBar>
                     <connections>
                         <segue destination="M6z-DL-RRt" kind="relationship" relationship="rootViewController" id="rGw-7f-Qfw"/>
+                        <segue destination="30o-e9-F3d" kind="custom" identifier="Segue_Signout" customClass="IOSWindowRootControllerSwapSegue" id="yrx-ed-TRW"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtk-D9-9HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -134,7 +135,14 @@
                             <outlet property="delegate" destination="M6z-DL-RRt" id="ine-d3-BQw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Devices" id="kTS-U4-QdE"/>
+                    <navigationItem key="navigationItem" title="My Devices" id="kTS-U4-QdE">
+                        <barButtonItem key="leftBarButtonItem" title="Sign out" id="med-TS-MPl">
+                            <color key="tintColor" red="0.83838383838383834" green="0.83838383838383834" blue="0.83838383838383834" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="signOutPressed:" destination="M6z-DL-RRt" id="9gM-Ph-AfY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="d25-d4-NJI" kind="custom" identifier="Segue_NoDevices" customClass="IOSEmbedViewInTableViewSegue" id="xyn-ES-Xoo"/>
                         <segue destination="d25-d4-NJI" kind="custom" identifier="Segue_Devices" customClass="IOSRemoveViewFromTableViewSegue" id="d1J-AS-goH"/>
@@ -208,7 +216,7 @@
         <scene sceneID="7K3-hY-GcI">
             <objects>
                 <tableViewController title="Capabilities" id="sQQ-2o-Od4" customClass="IOSCapabilitiesController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="W6X-41-CIp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="W6X-41-CIp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.19215686269999999" green="0.2901960784" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -227,7 +235,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.19215686269999999" green="0.2901960784" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.24435277706948355" green="0.36931629271509459" blue="0.45395127751010111" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -309,7 +317,7 @@
         <!--Reading-->
         <scene sceneID="kNR-kJ-tea">
             <objects>
-                <viewController title="Reading" id="uJE-K1-hCB" sceneMemberID="viewController">
+                <viewController title="Reading" id="uJE-K1-hCB" customClass="IOSReadingController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tsu-wO-6tC"/>
                         <viewControllerLayoutGuide type="bottom" id="vSD-XK-9pL"/>
@@ -319,13 +327,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Subscribing to..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeV-Sv-LRw">
-                                <rect key="frame" x="232" y="233" width="137" height="22"/>
+                                <rect key="frame" x="232" y="232" width="137" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OJ-7U-Ldc">
-                                <rect key="frame" x="280" y="270" width="43" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OJ-7U-Ldc">
+                                <rect key="frame" x="293" y="270" width="15" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.92929292929292928" green="0.92929292929292928" blue="0.92929292929292928" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -334,17 +342,21 @@
                         <color key="backgroundColor" red="0.19215686269999999" green="0.2901960784" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="3OJ-7U-Ldc" firstAttribute="top" secondItem="CeV-Sv-LRw" secondAttribute="bottom" constant="16" id="2gp-dF-CFW"/>
-                            <constraint firstItem="vSD-XK-9pL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3OJ-7U-Ldc" secondAttribute="bottom" constant="8" id="BZw-J4-3ul"/>
+                            <constraint firstItem="vSD-XK-9pL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3OJ-7U-Ldc" secondAttribute="bottom" constant="8" symbolic="YES" id="BZw-J4-3ul"/>
                             <constraint firstItem="CeV-Sv-LRw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mwv-k8-PXS" secondAttribute="leadingMargin" constant="8" id="Dgo-7J-nXN"/>
                             <constraint firstAttribute="centerY" secondItem="CeV-Sv-LRw" secondAttribute="centerY" constant="25" id="JtQ-8S-lhp"/>
                             <constraint firstAttribute="centerX" secondItem="CeV-Sv-LRw" secondAttribute="centerX" id="KI0-bk-Z2g"/>
                             <constraint firstAttribute="centerX" secondItem="3OJ-7U-Ldc" secondAttribute="centerX" id="QtB-oP-aDK"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="CeV-Sv-LRw" secondAttribute="trailing" constant="8" id="XqN-7P-YDN"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="3OJ-7U-Ldc" secondAttribute="trailing" constant="8" id="bgb-Ze-fNh"/>
-                            <constraint firstItem="CeV-Sv-LRw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Tsu-wO-6tC" secondAttribute="bottom" constant="8" id="c4S-wI-IkD"/>
+                            <constraint firstItem="CeV-Sv-LRw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Tsu-wO-6tC" secondAttribute="bottom" constant="8" symbolic="YES" id="c4S-wI-IkD"/>
                             <constraint firstItem="3OJ-7U-Ldc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mwv-k8-PXS" secondAttribute="leadingMargin" constant="8" id="zK3-DE-GzY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="meaningLabel" destination="CeV-Sv-LRw" id="4tw-Yx-dXZ"/>
+                        <outlet property="valueLabel" destination="3OJ-7U-Ldc" id="HBH-5T-yuc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhb-Ep-UqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,7 +365,7 @@
         <!--Command-->
         <scene sceneID="W7n-wF-tPf">
             <objects>
-                <viewController title="Command" id="ske-2Q-ZbI" sceneMemberID="viewController">
+                <viewController title="Command" id="ske-2Q-ZbI" customClass="IOSCommandController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hGb-jg-uDx"/>
                         <viewControllerLayoutGuide type="bottom" id="4jM-Nc-6PP"/>
@@ -361,8 +373,45 @@
                     <view key="view" contentMode="scaleToFill" id="9WD-Px-dLo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Send value to..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdE-61-gUW">
+                                <rect key="frame" x="236" y="233" width="129" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value to send to device" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RGp-Pj-iB7">
+                                <rect key="frame" x="200" y="274" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="200" id="s2K-Zb-cxi"/>
+                                </constraints>
+                                <color key="textColor" red="0.12125157828282829" green="0.12125157828282829" blue="0.12125157828282829" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="editingDidEndOnExit:" destination="ske-2Q-ZbI" eventType="editingDidEndOnExit" id="AHx-Lw-mR6"/>
+                                    <action selector="editingDidEndOnTextField:" destination="ske-2Q-ZbI" eventType="editingDidEnd" id="VfV-Dg-C0x"/>
+                                </connections>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="0.19215686269999999" green="0.2901960784" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4jM-Nc-6PP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RGp-Pj-iB7" secondAttribute="bottom" constant="8" symbolic="YES" id="12X-hS-1hh"/>
+                            <constraint firstItem="RGp-Pj-iB7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9WD-Px-dLo" secondAttribute="leadingMargin" constant="8" id="1J4-2r-FUs"/>
+                            <constraint firstAttribute="centerX" secondItem="RGp-Pj-iB7" secondAttribute="centerX" id="5BJ-Ve-q1T"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="RGp-Pj-iB7" secondAttribute="trailing" constant="8" id="CCm-vo-5O0"/>
+                            <constraint firstAttribute="centerY" secondItem="MdE-61-gUW" secondAttribute="centerY" constant="25" id="HiE-1n-njI"/>
+                            <constraint firstItem="MdE-61-gUW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9WD-Px-dLo" secondAttribute="leadingMargin" constant="8" id="NxC-JK-GWO"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="MdE-61-gUW" secondAttribute="trailing" constant="8" id="VO3-r2-HEd"/>
+                            <constraint firstAttribute="centerX" secondItem="MdE-61-gUW" secondAttribute="centerX" id="XsM-d3-TPp"/>
+                            <constraint firstItem="RGp-Pj-iB7" firstAttribute="top" secondItem="MdE-61-gUW" secondAttribute="bottom" constant="20" id="Xwe-Wq-1SC"/>
+                            <constraint firstItem="MdE-61-gUW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hGb-jg-uDx" secondAttribute="bottom" constant="8" id="ykl-DP-FWB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="meaningLabel" destination="MdE-61-gUW" id="jBR-8C-Gyv"/>
+                        <outlet property="valueTextField" destination="RGp-Pj-iB7" id="heU-hH-i4C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNz-dt-LQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

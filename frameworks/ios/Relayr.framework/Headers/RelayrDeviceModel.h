@@ -40,7 +40,7 @@
 /*!
  *  @abstract Returns an array of all possible readings the device can collect.
  *  @discussion Each item in this array is an object of type <code>RelayrReading</code>. 
- *      Each input represents a different kind of reading.
+ *      Each reading represents a different kind of reading.
  *      That is, a <code>RelayrDevice</code> can have a luminosity sensor and a gyroscope;
  *      Therefore, this array would have two different readings.
  *
@@ -50,7 +50,7 @@
 
 /*!
  *  @abstract Returns an array of possible Commands a Device is capable of receiving.
- *  @discussion By 'Output' we refer to an object with commands or configuration settings sent to a Device.
+ *  @discussion By 'command' we refer to an object with commands or configuration settings sent to a Device.
  *	These are usually infrarred commands, ultrasound pulses etc.
  *	Each item in this array is an object of type <code>RelayrCommand</code>.
  *

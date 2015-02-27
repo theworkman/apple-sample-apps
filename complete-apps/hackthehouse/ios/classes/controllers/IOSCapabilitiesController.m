@@ -1,5 +1,7 @@
 #import "IOSCapabilitiesController.h"   // Header
 #import "RelayrControllers.h"           // HtH
+#import "IOSReadingController.h"        // HtH
+#import "IOSCommandController.h"        // HtH
 #import <Relayr/Relayr.h>               // Relayr.framework
 
 #define HtHSegueID_NoCapabilities   @"Segue_NoCapabilities"
@@ -36,6 +38,18 @@
     return (UINavigationController <RelayrControllers>*)super.navigationController;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:HtHSegueID_Reading])
+    {
+        ((IOSReadingController*)segue.destinationViewController).reading = _readings[self.tableView.indexPathForSelectedRow.row];
+    }
+    else if ([segue.identifier isEqualToString:HtHSegueID_Command])
+    {
+        ((IOSCommandController*)segue.destinationViewController).command = _commands[self.tableView.indexPathForSelectedRow.row];
+    }
+}
+
 #pragma mark Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView*)tableView
@@ -52,6 +66,15 @@
         [self performSegueWithIdentifier:HtHSegueID_Capabilities sender:self];
     }
     return numSections;
+}
+
+- (NSString*)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if ([[self arrayForSection:section].lastObject isKindOfClass:[RelayrReading class]]) {
+        return @"Readings";
+    } else {
+        return @"Commands";
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

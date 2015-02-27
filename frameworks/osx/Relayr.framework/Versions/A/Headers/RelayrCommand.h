@@ -14,7 +14,7 @@
 @property (readonly,weak,nonatomic) RelayrDeviceModel* deviceModel;
 
 /*!
- *  @abstract The name of the type of output the <code>RelayrDevice</code> can send.
+ *  @abstract The name of the type of command the <code>RelayrDevice</code> can send.
  *  @discussion Currently only two types of meanings are accepted: "led" and <code>nil</code>.
  */
 @property (readonly,nonatomic) NSString* meaning;

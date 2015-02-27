@@ -1,6 +1,7 @@
 #import "IOSMyDevicesController.h"      // Header
 #import "RelayrControllers.h"           // HtH
 #import "IOSCapabilitiesController.h"   // HtH
+#import "IOSMainNavController.h"        // HtH
 
 #define HtHSegueID_NoDevices        @"Segue_NoDevices"
 #define HtHSegueID_SomeDevices      @"Segue_Devices"
@@ -112,6 +113,11 @@
         if (!device.transmitter) { [result addObject:device]; }
     }
     return (result.count) ? result : nil;
+}
+
+- (IBAction)signOutPressed:(UIBarButtonItem*)sender
+{
+    [((IOSMainNavController*)self.navigationController) signOut];
 }
 
 @end

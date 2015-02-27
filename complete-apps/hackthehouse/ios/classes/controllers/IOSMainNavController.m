@@ -1,7 +1,7 @@
 #import "IOSMainNavController.h"    // Header
+#import <Relayr/Relayr.h>           // Relayr.framework
 
-@interface IOSMainNavController ()
-@end
+#define HtHSegueID_SignOut          @"Segue_Signout"
 
 @implementation IOSMainNavController
 
@@ -19,6 +19,14 @@
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
+}
+
+- (void)signOut
+{
+    [RelayrApp removeAppFromFileSystem:_app];
+    _app = nil;
+    _user = nil;
+    [self performSegueWithIdentifier:HtHSegueID_SignOut sender:self];
 }
 
 @end

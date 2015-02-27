@@ -23,6 +23,17 @@
 {
     [super viewDidLoad];
     _logIndicator.hidden = YES;
+    
+    // Check if there was already an app stored (with some users logged in).
+    RelayrApp* app = [RelayrApp retrieveAppWithIDFromFileSystem:RelayrAppID];
+    RelayrUser* user = app.loggedUsers.firstObject;
+    if (app && user)
+    {
+        // TODO: Fix this dumb dispatch_after for the UI to finish loading. Put the code in AppDelegate, and then load the appropriate viewController.
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self showSuccessWithApp:app user:user];
+        });
+    }
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
