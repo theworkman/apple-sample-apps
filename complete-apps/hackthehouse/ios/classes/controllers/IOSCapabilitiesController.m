@@ -87,9 +87,11 @@
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"IOSCapabilitiesCell" forIndexPath:indexPath];
     id capability = [self arrayForSection:indexPath.section][indexPath.row];
     if ([capability isKindOfClass:[RelayrReading class]]) {
-        cell.textLabel.text = ((RelayrReading*)capability).meaning;
+        RelayrReading* reading = capability;
+        cell.textLabel.text = [NSString stringWithFormat:@"%@/%@", reading.path, reading.meaning];
     } else {
-        cell.textLabel.text = ((RelayrCommand*)capability).meaning;
+        RelayrCommand* command = capability;
+        cell.textLabel.text = [NSString stringWithFormat:@"%@/%@", command.path, command.meaning];
     }
     return cell;
 }
@@ -118,7 +120,17 @@
         if (readings) { [result addObjectsFromArray:readings]; }
     }
     
-    return (result.count) ? result.copy : nil;
+    if (!result.count) { return nil; }
+    [result sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        RelayrReading* reading1 = obj1;
+        RelayrReading* reading2 = obj2;
+        
+        NSString* str1 = [NSString stringWithFormat:@"%@/%@", reading1.path, reading1.meaning];
+        NSString* str2 = [NSString stringWithFormat:@"%@/%@", reading2.path, reading2.meaning];
+        return [str1 compare:str2];
+    }];
+    
+    return result.copy;
 }
 
 - (NSArray*)commandsOfDevice
@@ -133,6 +145,15 @@
         if (commands) { [result addObjectsFromArray:commands]; }
     }
     
+    if (!result.count) { return nil; }
+    [result sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        RelayrCommand* cmd1 = obj1;
+        RelayrCommand* cmd2 = obj2;
+        
+        NSString* str1 = [NSString stringWithFormat:@"%@/%@", cmd1.path, cmd1.meaning];
+        NSString* str2 = [NSString stringWithFormat:@"%@/%@", cmd2.path, cmd2.meaning];
+        return [str1 compare:str2];
+    }];
     return (result) ? result.copy : nil;
 }
 

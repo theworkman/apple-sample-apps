@@ -6,6 +6,10 @@
 @property (weak,nonatomic) IBOutlet UITextField* valueTextField;
 @end
 
+@interface IOSCommandController () <UITextFieldDelegate>
+
+@end
+
 @implementation IOSCommandController
 
 #pragma mark - Public API
@@ -18,13 +22,50 @@
 
 #pragma mark - Private functionality
 
-- (IBAction)editingDidEndOnTextField:(UITextField*)sender
+- (BOOL)textFieldShouldReturn:(UITextField*)textField
 {
-    // TODO: There will be problems here, since it has to be a specific value.
-    [_command sendValue:_valueTextField.text withCompletion:^(NSError* error) {
+    if (textField.text.length)
+    {
+        BOOL commandAccepted = [self sendCommandEncodedInString:textField.text];
+        if (commandAccepted) { textField.text = @""; }
+    }
+    return NO;
+}
+
+- (BOOL)sendCommandEncodedInString:(NSString*)string
+{
+    id valueResult;
+    NSString* unit = _command.unit;
+    if (!unit.length || !string.length) { return NO; }
+    
+    if ([unit isEqualToString:@"boolean"])
+    {
+        return valueResult = [NSNumber numberWithBool:string.boolValue];
+    }
+    else if ([unit isEqualToString:@"integer"] || [unit isEqualToString:@"number"])
+    {
+        valueResult = [[self sharedNumberFormatter] numberFromString:string];
+        if (!valueResult) { return NO; }
+    }
+    else { valueResult = string; }
+    
+    [_command sendValue:valueResult withCompletion:^(NSError* error) {
         if (!error) { printf("Command was send successfully!"); }
         else { printf("The following error happened when trying to send a command:\n\t%s", error.localizedDescription.UTF8String); }
     }];
+    
+    return YES;
+}
+
+- (NSNumberFormatter*)sharedNumberFormatter
+{
+    static NSNumberFormatter* fmt;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        fmt = [[NSNumberFormatter alloc] init];
+        fmt.numberStyle = NSNumberFormatterDecimalStyle;
+    });
+    return fmt;
 }
 
 @end

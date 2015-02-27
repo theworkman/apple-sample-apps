@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		OQfXGMLG9c0pyAnkU1cpbogZDbw=
+		3KFb8yS+hZujLp3jTBg1iF28ZqQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -37,7 +37,7 @@
 		</data>
 		<key>Headers/RelayrDevice.h</key>
 		<data>
-		QoQUPIVLlzgayF91+Evy9F4c/5k=
+		yV6HaNU04WFxOWoRqKefl6o0Pyc=
 		</data>
 		<key>Headers/RelayrDeviceModel.h</key>
 		<data>
@@ -125,7 +125,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		OQfXGMLG9c0pyAnkU1cpbogZDbw=
+		3KFb8yS+hZujLp3jTBg1iF28ZqQ=
 		</data>
 	</dict>
 	<key>rules</key>

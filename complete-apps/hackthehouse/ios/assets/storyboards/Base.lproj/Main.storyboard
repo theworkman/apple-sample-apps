@@ -389,8 +389,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="editingDidEndOnExit:" destination="ske-2Q-ZbI" eventType="editingDidEndOnExit" id="AHx-Lw-mR6"/>
-                                    <action selector="editingDidEndOnTextField:" destination="ske-2Q-ZbI" eventType="editingDidEnd" id="VfV-Dg-C0x"/>
+                                    <outlet property="delegate" destination="ske-2Q-ZbI" id="dBT-vw-TYJ"/>
                                 </connections>
                             </textField>
                         </subviews>

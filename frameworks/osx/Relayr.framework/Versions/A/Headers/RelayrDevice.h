@@ -175,4 +175,15 @@
  */
 - (void)unsubscribeToAll;
 
+#pragma mark - Temporal functionality (to be deleted soon)
+
+/*!
+ *  @abstract It sends a command through the API service to the device.
+ *
+ *  @param path It can be <code>nil</code>, an empty string, or a specific path.
+ *  @param meaning Also called <i>command</i>. It is the actual command. It must be a valid <code>NSNumber</code> or <code>NSString</code>.
+ *  @param value An object representing the value to be send. This object will be converted into JSON with the <code>NSJSONSerialization</code> service. Thus, if you want to send a number, wrap the number in an <code>NSNumber</code>. If you want to send a JSON object, make an appropriate <code>NSDictionary</code>, etc. This value cannot be <code>nil</code>.
+ */
+- (void)sendCommandToPath:(NSString*)path meaning:(id)meaning value:(id)value;
+
 @end
