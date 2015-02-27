@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62BE2C021A9FE46F0062F988 /* IOSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BE2BFE1A9FE46F0062F988 /* IOSController.m */; };
+		62BE2C031A9FE46F0062F988 /* IOSWindowRootControllerSwapSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BE2C011A9FE46F0062F988 /* IOSWindowRootControllerSwapSegue.m */; };
+		62BE2C071A9FE72D0062F988 /* IOSMainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BE2C061A9FE72D0062F988 /* IOSMainNavController.m */; };
+		62BE2C0D1A9FECBB0062F988 /* IOSMyDevicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BE2C0C1A9FECBB0062F988 /* IOSMyDevicesController.m */; };
+		62BE2C101A9FF0E00062F988 /* IOSEmbedViewInTableViewSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BE2C0F1A9FF0E00062F988 /* IOSEmbedViewInTableViewSegue.m */; };
+		62BE2C131A9FF1820062F988 /* IOSRemoveViewFromTableViewSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BE2C121A9FF1820062F988 /* IOSRemoveViewFromTableViewSegue.m */; };
+		62BE2C1A1A9FFD9F0062F988 /* IOSCapabilitiesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BE2C191A9FFD9F0062F988 /* IOSCapabilitiesController.m */; };
 		62F52C8F1A9FD6C1008CE2AF /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F52C8D1A9FD6BB008CE2AF /* Relayr.framework */; };
 		62F52C901A9FD6C1008CE2AF /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62F52C8D1A9FD6BB008CE2AF /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62F52C971A9FD761008CE2AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F52C961A9FD761008CE2AF /* main.m */; };
 		62F52C9C1A9FD831008CE2AF /* IOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F52C991A9FD831008CE2AF /* IOSAppDelegate.m */; };
-		62F52C9D1A9FD831008CE2AF /* IOSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F52C9B1A9FD831008CE2AF /* IOSController.m */; };
 		62F52CA61A9FD843008CE2AF /* ios.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F52CA01A9FD843008CE2AF /* ios.xcassets */; };
 		62F52CA71A9FD843008CE2AF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F52CA21A9FD843008CE2AF /* LaunchScreen.xib */; };
 		62F52CA81A9FD843008CE2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F52CA41A9FD843008CE2AF /* Main.storyboard */; };
@@ -32,14 +38,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		62BE2BFD1A9FE46F0062F988 /* IOSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSController.h; sourceTree = "<group>"; };
+		62BE2BFE1A9FE46F0062F988 /* IOSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSController.m; sourceTree = "<group>"; };
+		62BE2C001A9FE46F0062F988 /* IOSWindowRootControllerSwapSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSWindowRootControllerSwapSegue.h; sourceTree = "<group>"; };
+		62BE2C011A9FE46F0062F988 /* IOSWindowRootControllerSwapSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSWindowRootControllerSwapSegue.m; sourceTree = "<group>"; };
+		62BE2C041A9FE5720062F988 /* RelayrControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelayrControllers.h; sourceTree = "<group>"; };
+		62BE2C051A9FE72D0062F988 /* IOSMainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSMainNavController.h; sourceTree = "<group>"; };
+		62BE2C061A9FE72D0062F988 /* IOSMainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSMainNavController.m; sourceTree = "<group>"; };
+		62BE2C0B1A9FECBB0062F988 /* IOSMyDevicesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSMyDevicesController.h; sourceTree = "<group>"; };
+		62BE2C0C1A9FECBB0062F988 /* IOSMyDevicesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSMyDevicesController.m; sourceTree = "<group>"; };
+		62BE2C0E1A9FF0E00062F988 /* IOSEmbedViewInTableViewSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSEmbedViewInTableViewSegue.h; sourceTree = "<group>"; };
+		62BE2C0F1A9FF0E00062F988 /* IOSEmbedViewInTableViewSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSEmbedViewInTableViewSegue.m; sourceTree = "<group>"; };
+		62BE2C111A9FF1820062F988 /* IOSRemoveViewFromTableViewSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSRemoveViewFromTableViewSegue.h; sourceTree = "<group>"; };
+		62BE2C121A9FF1820062F988 /* IOSRemoveViewFromTableViewSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSRemoveViewFromTableViewSegue.m; sourceTree = "<group>"; };
+		62BE2C181A9FFD9F0062F988 /* IOSCapabilitiesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSCapabilitiesController.h; sourceTree = "<group>"; };
+		62BE2C191A9FFD9F0062F988 /* IOSCapabilitiesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSCapabilitiesController.m; sourceTree = "<group>"; };
 		62F52C631A9FD646008CE2AF /* Hack the House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hack the House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F52C8D1A9FD6BB008CE2AF /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
 		62F52C931A9FD6FC008CE2AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62F52C961A9FD761008CE2AF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62F52C981A9FD831008CE2AF /* IOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSAppDelegate.h; sourceTree = "<group>"; };
 		62F52C991A9FD831008CE2AF /* IOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSAppDelegate.m; sourceTree = "<group>"; };
-		62F52C9A1A9FD831008CE2AF /* IOSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSController.h; sourceTree = "<group>"; };
-		62F52C9B1A9FD831008CE2AF /* IOSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSController.m; sourceTree = "<group>"; };
 		62F52CA01A9FD843008CE2AF /* ios.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ios.xcassets; sourceTree = "<group>"; };
 		62F52CA31A9FD843008CE2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		62F52CA51A9FD843008CE2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +76,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62BE2BFC1A9FE46F0062F988 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62BE2BFF1A9FE46F0062F988 /* segues */,
+				62BE2C041A9FE5720062F988 /* RelayrControllers.h */,
+				62BE2BFD1A9FE46F0062F988 /* IOSController.h */,
+				62BE2BFE1A9FE46F0062F988 /* IOSController.m */,
+				62BE2C051A9FE72D0062F988 /* IOSMainNavController.h */,
+				62BE2C061A9FE72D0062F988 /* IOSMainNavController.m */,
+				62BE2C0B1A9FECBB0062F988 /* IOSMyDevicesController.h */,
+				62BE2C0C1A9FECBB0062F988 /* IOSMyDevicesController.m */,
+				62BE2C181A9FFD9F0062F988 /* IOSCapabilitiesController.h */,
+				62BE2C191A9FFD9F0062F988 /* IOSCapabilitiesController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		62BE2BFF1A9FE46F0062F988 /* segues */ = {
+			isa = PBXGroup;
+			children = (
+				62BE2C001A9FE46F0062F988 /* IOSWindowRootControllerSwapSegue.h */,
+				62BE2C011A9FE46F0062F988 /* IOSWindowRootControllerSwapSegue.m */,
+				62BE2C0E1A9FF0E00062F988 /* IOSEmbedViewInTableViewSegue.h */,
+				62BE2C0F1A9FF0E00062F988 /* IOSEmbedViewInTableViewSegue.m */,
+				62BE2C111A9FF1820062F988 /* IOSRemoveViewFromTableViewSegue.h */,
+				62BE2C121A9FF1820062F988 /* IOSRemoveViewFromTableViewSegue.m */,
+			);
+			path = segues;
+			sourceTree = "<group>";
+		};
 		62F52C5A1A9FD646008CE2AF = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +147,7 @@
 				62F52C961A9FD761008CE2AF /* main.m */,
 				62F52C981A9FD831008CE2AF /* IOSAppDelegate.h */,
 				62F52C991A9FD831008CE2AF /* IOSAppDelegate.m */,
-				62F52C9A1A9FD831008CE2AF /* IOSController.h */,
-				62F52C9B1A9FD831008CE2AF /* IOSController.m */,
+				62BE2BFC1A9FE46F0062F988 /* controllers */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -201,9 +249,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62BE2C131A9FF1820062F988 /* IOSRemoveViewFromTableViewSegue.m in Sources */,
+				62BE2C101A9FF0E00062F988 /* IOSEmbedViewInTableViewSegue.m in Sources */,
+				62BE2C071A9FE72D0062F988 /* IOSMainNavController.m in Sources */,
+				62BE2C0D1A9FECBB0062F988 /* IOSMyDevicesController.m in Sources */,
+				62BE2C1A1A9FFD9F0062F988 /* IOSCapabilitiesController.m in Sources */,
+				62BE2C031A9FE46F0062F988 /* IOSWindowRootControllerSwapSegue.m in Sources */,
+				62BE2C021A9FE46F0062F988 /* IOSController.m in Sources */,
 				62F52C971A9FD761008CE2AF /* main.m in Sources */,
 				62F52C9C1A9FD831008CE2AF /* IOSAppDelegate.m in Sources */,
-				62F52C9D1A9FD831008CE2AF /* IOSController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +410,7 @@
 				62F52C881A9FD647008CE2AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
