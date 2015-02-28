@@ -13,15 +13,11 @@
 		6248025E1A67F83500A2C004 /* reachability.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6248024A1A67F7A400A2C004 /* reachability.xcassets */; };
 		6248025F1A67F83500A2C004 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6248024C1A67F7A400A2C004 /* LaunchScreen.xib */; };
 		624802601A67F83500A2C004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6248024E1A67F7A400A2C004 /* Main.storyboard */; };
-		62D491D41A680129001D409B /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D491D21A680123001D409B /* Relayr.framework */; };
-		62D491D51A680129001D409B /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62D491D21A680123001D409B /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62D492011A680BAC001D409B /* reachability.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D492001A680BAC001D409B /* reachability.xcassets */; };
 		62D492051A680BC5001D409B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D492031A680BC5001D409B /* Main.storyboard */; };
 		62D4920D1A680BF0001D409B /* OSXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D492091A680BF0001D409B /* OSXAppDelegate.m */; };
 		62D4920E1A680BF0001D409B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D4920A1A680BF0001D409B /* main.m */; };
 		62D4920F1A680BF0001D409B /* OSXController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D4920C1A680BF0001D409B /* OSXController.m */; };
-		62D492121A680C63001D409B /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D492101A680C49001D409B /* Relayr.framework */; };
-		62D492131A680C63001D409B /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62D492101A680C49001D409B /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				62D491D51A680129001D409B /* Relayr.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				62D492131A680C63001D409B /* Relayr.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,7 +54,6 @@
 		6248024D1A67F7A400A2C004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6248024F1A67F7A400A2C004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		624802571A67F7A400A2C004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62D491D21A680123001D409B /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/ios/Relayr.framework; sourceTree = "<group>"; };
 		62D491DD1A680ACA001D409B /* Reachability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reachability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D492001A680BAC001D409B /* reachability.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = reachability.xcassets; sourceTree = "<group>"; };
 		62D492041A680BC5001D409B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +63,6 @@
 		62D4920A1A680BF0001D409B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62D4920B1A680BF0001D409B /* OSXController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXController.h; sourceTree = "<group>"; };
 		62D4920C1A680BF0001D409B /* OSXController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXController.m; sourceTree = "<group>"; };
-		62D492101A680C49001D409B /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Relayr.framework; path = ../../../frameworks/osx/Relayr.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62D491D41A680129001D409B /* Relayr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62D492121A680C63001D409B /* Relayr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +107,6 @@
 				624802481A67F7A400A2C004 /* assets */,
 				624802501A67F7A400A2C004 /* classes */,
 				624802561A67F7A400A2C004 /* configuration */,
-				62D491D21A680123001D409B /* Relayr.framework */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -174,7 +163,6 @@
 				624802591A67F7A400A2C004 /* assets */,
 				6248025C1A67F7A400A2C004 /* classes */,
 				6248025D1A67F7A400A2C004 /* configuration */,
-				62D492101A680C49001D409B /* Relayr.framework */,
 			);
 			path = osx;
 			sourceTree = "<group>";
@@ -406,8 +394,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
+					"$(SRCROOT)/../../frameworks/ios/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -458,8 +445,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/ios",
+					"$(SRCROOT)/../../frameworks/ios/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -503,7 +489,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/osx",
+					"$(SRCROOT)/../../frameworks/osx/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -555,7 +541,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/san_dehesa/Marcos/Workspace/Relayr/Apple/apple-sample-apps/frameworks/osx",
+					"$(SRCROOT)/../../frameworks/osx/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
